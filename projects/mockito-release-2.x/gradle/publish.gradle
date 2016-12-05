@@ -1,0 +1,47 @@
+apply plugin: 'com.jfrog.bintray'
+
+//if the build fails, we don't want to publish
+tasks.bintrayUpload.mustRunAfter "build"
+
+def theVcsTag = "v" + project.version
+
+bintray {
+    user = 'szczepiq'
+    key = System.env.MOCKITO_BINTRAY_API_KEY
+
+    publications = ['mockitoCore']
+
+    publish = true
+
+    pkg {
+        repo = 'maven'
+
+        userOrg = 'mockito'
+        // so that despite using 'szczepiq' user, the artifact is published
+        // to 'mockito' organization and all members can modify/edit it
+
+        name = 'mockito'
+        desc = 'Mockito library'
+        websiteUrl = 'http://mockito.org'
+        issueTrackerUrl = 'https://github.com/mockito/mockito/issues'
+        vcsUrl = 'https://github.com/mockito/mockito.git'
+        licenses = ['MIT']
+        labels = ['mocks', 'tdd', 'unit tests']
+        publicDownloadNumbers = true
+
+        // optional version attributes
+        version {
+            vcsTag = theVcsTag
+
+            gpg {
+               sign = true
+            }
+
+            //Automatically syncs to central repository (https://oss.sonatype.org/)
+            mavenCentralSync {
+                user = System.env.NEXUS_TOKEN_USER
+                password = System.env.NEXUS_TOKEN_PWD
+            }
+        }
+    }
+}
