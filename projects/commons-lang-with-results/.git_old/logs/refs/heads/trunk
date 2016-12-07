@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 4aba70fbb898d09bfef0c768d1b192ba41a61da4 Spencer Gagnon <spencer.gagnon95@gmail.com> 1481079911 -0500	clone: from /home/spencer/programming/520/defects4j/project_repos/commons-lang.git
+4aba70fbb898d09bfef0c768d1b192ba41a61da4 ec232ff27414463761d94c4b6818a7dda2d77c3f Spencer Gagnon <spencer.gagnon95@gmail.com> 1481132799 -0500	commit: Added some libraries to commons-lang so it can run its test (some artifacts of defects4j are that some libraries aren't available) and ran the mutations!
+ec232ff27414463761d94c4b6818a7dda2d77c3f 4aba70fbb898d09bfef0c768d1b192ba41a61da4 Spencer Gagnon <spencer.gagnon95@gmail.com> 1481132894 -0500	reset: moving to HEAD^
