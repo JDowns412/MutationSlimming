@@ -1,2 +1,5 @@
 TestNo,TestName
-1,triangle.TriangleTest
+1,triangle.ConditionCoverageTest
+2,triangle.MutationAdequateTest
+3,triangle.StatementCoverageTest
+4,triangle.TriangleTest

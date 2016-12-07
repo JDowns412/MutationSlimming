@@ -1,0 +1,1285 @@
+1:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testConstructor:17:assertEquals("001", cf.getTag()) |==> <NO-OP>
+2:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testSetData:23:cf.setData("12883376") |==> <NO-OP>
+3:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testSetData:24:assertEquals("12883376", cf.getData()) |==> <NO-OP>
+4:LVR:0:POS:org.marc4j.test.ControlFieldTest@testComparable:31:0 |==> 1
+5:LVR:0:NEG:org.marc4j.test.ControlFieldTest@testComparable:31:0 |==> -1
+6:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testComparable:31:assertEquals(0, cf1.compareTo(cf2)) |==> <NO-OP>
+7:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testComparable:32:cf2.setTag("009") |==> <NO-OP>
+8:LVR:NEG:0:org.marc4j.test.ControlFieldTest@testComparable:33:-1 |==> 0
+9:LVR:NEG:POS:org.marc4j.test.ControlFieldTest@testComparable:33:-1 |==> 1
+10:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testComparable:33:assertEquals(-1, cf1.compareTo(cf2)) |==> <NO-OP>
+11:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testComparable:34:cf2.setTag("007") |==> <NO-OP>
+12:LVR:POS:0:org.marc4j.test.ControlFieldTest@testComparable:35:1 |==> 0
+13:LVR:POS:NEG:org.marc4j.test.ControlFieldTest@testComparable:35:1 |==> -1
+14:STD:<CALL>:<NO-OP>:org.marc4j.test.ControlFieldTest@testComparable:35:assertEquals(1, cf1.compareTo(cf2)) |==> <NO-OP>
+15:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testConstructor:25:assertEquals("245", df.getTag()) |==> <NO-OP>
+16:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testConstructor:26:assertEquals('1', df.getIndicator1()) |==> <NO-OP>
+17:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testConstructor:27:assertEquals('0', df.getIndicator2()) |==> <NO-OP>
+18:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testAddSubfield:33:df.addSubfield(sf) |==> <NO-OP>
+19:LVR:POS:0:org.marc4j.test.DataFieldTest@testAddSubfield:34:1 |==> 0
+20:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testAddSubfield:34:1 |==> -1
+21:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testAddSubfield:34:assertEquals(1, df.getSubfields().size()) |==> <NO-OP>
+22:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testSetSubfield:42:df.addSubfield(sf2) |==> <NO-OP>
+23:LVR:0:POS:org.marc4j.test.DataFieldTest@testSetSubfield:43:0 |==> 1
+24:LVR:0:NEG:org.marc4j.test.DataFieldTest@testSetSubfield:43:0 |==> -1
+25:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testSetSubfield:43:df.addSubfield(0, sf1) |==> <NO-OP>
+26:LVR:0:POS:org.marc4j.test.DataFieldTest@testSetSubfield:44:0 |==> 1
+27:LVR:0:NEG:org.marc4j.test.DataFieldTest@testSetSubfield:44:0 |==> -1
+28:LVR:POS:0:org.marc4j.test.DataFieldTest@testSetSubfield:45:2 |==> 0
+29:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testSetSubfield:45:2 |==> -2
+30:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testSetSubfield:45:assertEquals(2, df.getSubfields().size()) |==> <NO-OP>
+31:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testSetSubfield:46:assertEquals('a', s.getCode()) |==> <NO-OP>
+32:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:56:df.addSubfield(sf1) |==> <NO-OP>
+33:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:57:df.addSubfield(sf2) |==> <NO-OP>
+34:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:58:df.addSubfield(sf3) |==> <NO-OP>
+35:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:59:df.addSubfield(sf4) |==> <NO-OP>
+36:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:61:1 |==> 0
+37:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:61:1 |==> -1
+38:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:61:assertEquals(1, sList.size()) |==> <NO-OP>
+39:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:62:0 |==> 1
+40:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:62:0 |==> -1
+41:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:62:assertEquals('a', sList.get(0).getCode()) |==> <NO-OP>
+42:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:65:2 |==> 0
+43:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:65:2 |==> -2
+44:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:65:assertEquals(2, sList2.size()) |==> <NO-OP>
+45:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:66:0 |==> 1
+46:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:66:0 |==> -1
+47:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:66:assertEquals('a', sList2.get(0).getCode()) |==> <NO-OP>
+48:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:67:1 |==> 0
+49:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:67:1 |==> -1
+50:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:67:assertEquals('c', sList2.get(1).getCode()) |==> <NO-OP>
+51:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:70:3 |==> 0
+52:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:70:3 |==> -3
+53:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:70:assertEquals(3, sList3.size()) |==> <NO-OP>
+54:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:71:0 |==> 1
+55:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:71:0 |==> -1
+56:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:71:assertEquals('a', sList3.get(0).getCode()) |==> <NO-OP>
+57:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:72:1 |==> 0
+58:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:72:1 |==> -1
+59:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:72:assertEquals('b', sList3.get(1).getCode()) |==> <NO-OP>
+60:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:73:2 |==> 0
+61:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:73:2 |==> -2
+62:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:73:assertEquals('c', sList3.get(2).getCode()) |==> <NO-OP>
+63:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:76:4 |==> 0
+64:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:76:4 |==> -4
+65:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:76:assertEquals(4, sList4.size()) |==> <NO-OP>
+66:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:77:0 |==> 1
+67:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:77:0 |==> -1
+68:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:77:assertEquals('a', sList4.get(0).getCode()) |==> <NO-OP>
+69:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:78:1 |==> 0
+70:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:78:1 |==> -1
+71:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:78:assertEquals('h', sList4.get(1).getCode()) |==> <NO-OP>
+72:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:79:2 |==> 0
+73:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:79:2 |==> -2
+74:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:79:assertEquals('b', sList4.get(2).getCode()) |==> <NO-OP>
+75:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:80:3 |==> 0
+76:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:80:3 |==> -3
+77:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:80:assertEquals('c', sList4.get(3).getCode()) |==> <NO-OP>
+78:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:83:3 |==> 0
+79:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:83:3 |==> -3
+80:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:83:assertEquals(3, sList5.size()) |==> <NO-OP>
+81:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:84:0 |==> 1
+82:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:84:0 |==> -1
+83:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:84:assertEquals('a', sList5.get(0).getCode()) |==> <NO-OP>
+84:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:85:1 |==> 0
+85:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:85:1 |==> -1
+86:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:85:assertEquals('h', sList5.get(1).getCode()) |==> <NO-OP>
+87:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:86:2 |==> 0
+88:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:86:2 |==> -2
+89:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:86:assertEquals('b', sList5.get(2).getCode()) |==> <NO-OP>
+90:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:89:3 |==> 0
+91:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:89:3 |==> -3
+92:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:89:assertEquals(3, sList6.size()) |==> <NO-OP>
+93:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:90:0 |==> 1
+94:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:90:0 |==> -1
+95:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:90:assertEquals('a', sList6.get(0).getCode()) |==> <NO-OP>
+96:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:91:1 |==> 0
+97:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:91:1 |==> -1
+98:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:91:assertEquals('b', sList6.get(1).getCode()) |==> <NO-OP>
+99:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:92:2 |==> 0
+100:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:92:2 |==> -2
+101:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:92:assertEquals('c', sList6.get(2).getCode()) |==> <NO-OP>
+102:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:95:3 |==> 0
+103:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:95:3 |==> -3
+104:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:95:assertEquals(3, sList7.size()) |==> <NO-OP>
+105:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:96:0 |==> 1
+106:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:96:0 |==> -1
+107:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:96:assertEquals('a', sList7.get(0).getCode()) |==> <NO-OP>
+108:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:97:1 |==> 0
+109:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:97:1 |==> -1
+110:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:97:assertEquals('b', sList7.get(1).getCode()) |==> <NO-OP>
+111:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:98:2 |==> 0
+112:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:98:2 |==> -2
+113:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:98:assertEquals('c', sList7.get(2).getCode()) |==> <NO-OP>
+114:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:101:2 |==> 0
+115:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:101:2 |==> -2
+116:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:101:assertEquals(2, sList8.size()) |==> <NO-OP>
+117:LVR:0:POS:org.marc4j.test.DataFieldTest@testGetSubfields:102:0 |==> 1
+118:LVR:0:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:102:0 |==> -1
+119:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:102:assertEquals('a', sList8.get(0).getCode()) |==> <NO-OP>
+120:LVR:POS:0:org.marc4j.test.DataFieldTest@testGetSubfields:103:1 |==> 0
+121:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testGetSubfields:103:1 |==> -1
+122:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfields:103:assertEquals('h', sList8.get(1).getCode()) |==> <NO-OP>
+123:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:113:df.addSubfield(sf1) |==> <NO-OP>
+124:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:114:df.addSubfield(sf2) |==> <NO-OP>
+125:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:115:df.addSubfield(sf3) |==> <NO-OP>
+126:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:116:df.addSubfield(sf4) |==> <NO-OP>
+127:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:118:exception.expect(PatternSyntaxException.class) |==> <NO-OP>
+128:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec1:119:df.getSubfields("[c-a]") |==> <NO-OP>
+129:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:129:df.addSubfield(sf1) |==> <NO-OP>
+130:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:130:df.addSubfield(sf2) |==> <NO-OP>
+131:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:131:df.addSubfield(sf3) |==> <NO-OP>
+132:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:132:df.addSubfield(sf4) |==> <NO-OP>
+133:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:134:exception.expect(PatternSyntaxException.class) |==> <NO-OP>
+134:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testGetSubfieldsWithBadSubfieldSpec2:135:df.getSubfields("[abc") |==> <NO-OP>
+135:LVR:0:POS:org.marc4j.test.DataFieldTest@testComparable:142:0 |==> 1
+136:LVR:0:NEG:org.marc4j.test.DataFieldTest@testComparable:142:0 |==> -1
+137:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testComparable:142:assertEquals(0, df1.compareTo(df2)) |==> <NO-OP>
+138:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testComparable:143:df2.setTag("245") |==> <NO-OP>
+139:LVR:POS:0:org.marc4j.test.DataFieldTest@testComparable:144:4 |==> 0
+140:LVR:POS:NEG:org.marc4j.test.DataFieldTest@testComparable:144:4 |==> -4
+141:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testComparable:144:assertEquals(4, df1.compareTo(df2)) |==> <NO-OP>
+142:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testComparable:145:df2.setTag("700") |==> <NO-OP>
+143:LVR:NEG:0:org.marc4j.test.DataFieldTest@testComparable:146:-1 |==> 0
+144:LVR:NEG:POS:org.marc4j.test.DataFieldTest@testComparable:146:-1 |==> 1
+145:STD:<CALL>:<NO-OP>:org.marc4j.test.DataFieldTest@testComparable:146:assertEquals(-1, df1.compareTo(df2)) |==> <NO-OP>
+146:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testInvalidMarcInJsonReader:21:checkMarcJsonDylanRecordFromFile(StaticTestRecords.RESOURCES_ILLEGAL_MARC_IN_JSON_JSON) |==> <NO-OP>
+147:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testInvalidMarcInJsonReader:22:fail() |==> <NO-OP>
+148:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testInvalidMarcInJsonReader:25:assertTrue("EOL", e.getMessage().contains(msg)) |==> <NO-OP>
+149:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:35:reader1.hasNext() && reader2.hasNext() |==> reader1.hasNext() == reader2.hasNext()
+150:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:35:reader1.hasNext() && reader2.hasNext() |==> false
+151:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:35:reader1.hasNext() && reader2.hasNext() |==> reader1.hasNext()
+152:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:35:reader1.hasNext() && reader2.hasNext() |==> reader2.hasNext()
+153:LVR:0:POS:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:40:0 |==> 1
+154:LVR:0:NEG:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:40:0 |==> -1
+155:ROR:<(int,int):!=(int,int):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:40:i < recordAsStrings1.length |==> i != recordAsStrings1.length
+156:ROR:<(int,int):<=(int,int):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:40:i < recordAsStrings1.length |==> i <= recordAsStrings1.length
+157:ROR:<(int,int):FALSE(int,int):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:40:i < recordAsStrings1.length |==> false
+158:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:41:assertEquals("line mismatch between two records", recordAsStrings1[i], recordAsStrings2[i]) |==> <NO-OP>
+159:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record1 != null |==> true
+160:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record2 != null |==> true
+161:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record1 != null && record2 != null |==> record1 != null == (record2 != null)
+162:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record1 != null && record2 != null |==> false
+163:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record1 != null && record2 != null |==> record1 != null
+164:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.JsonReaderTest@testMarcJsonReaders:43:record1 != null && record2 != null |==> record2 != null
+165:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:44:RecordTestingUtils.assertEqualsIgnoreLeader(record1, record2) |==> <NO-OP>
+166:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:46:input1.close() |==> <NO-OP>
+167:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testMarcJsonReaders:47:input2.close() |==> <NO-OP>
+168:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testMarcJsonReader:51:checkMarcJsonDylanRecordFromFile(StaticTestRecords.RESOURCES_MARC_JSON_JSON) |==> <NO-OP>
+169:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@testLegalMarcInJson:56:checkMarcJsonDylanRecordFromFile(StaticTestRecords.RESOURCES_LEGAL_JSON_MARC_IN_JSON_JSON) |==> <NO-OP>
+170:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@getResourceAsStream:61:assertNotNull(fileName, input1) |==> <NO-OP>
+171:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@checkMarcJsonDylanRecordFromFile:69:fail("should have at least one record") |==> <NO-OP>
+172:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@checkMarcJsonDylanRecordFromFile:73:TestUtils.validateFreewheelingBobDylanRecord(record) |==> <NO-OP>
+173:COR:reader.hasNext():TRUE:org.marc4j.test.JsonReaderTest@checkMarcJsonDylanRecordFromFile:74:reader.hasNext() |==> false
+174:COR:reader.hasNext():FALSE:org.marc4j.test.JsonReaderTest@checkMarcJsonDylanRecordFromFile:74:reader.hasNext() |==> true
+175:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonReaderTest@checkMarcJsonDylanRecordFromFile:75:fail("should not have more than one record") |==> <NO-OP>
+176:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriter:23:writer.write(record) |==> <NO-OP>
+177:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriter:24:TestUtils.validateBytesAgainstFile(out.toByteArray(), StaticTestRecords.RESOURCES_SUMMERLAND_MARC_IN_JSON_JSON) |==> <NO-OP>
+178:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriter:25:writer.close() |==> <NO-OP>
+179:LVR:TRUE:FALSE:org.marc4j.test.JsonWriterTest@testMarcInJsonWriterIndented:33:true |==> false
+180:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriterIndented:33:writer.setIndent(true) |==> <NO-OP>
+181:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriterIndented:34:writer.write(record) |==> <NO-OP>
+182:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriterIndented:35:TestUtils.validateBytesAgainstFile(out.toByteArray(), StaticTestRecords.RESOURCES_SUMMERLAND_MARC_IN_JSON_INDENTED_JSON) |==> <NO-OP>
+183:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcInJsonWriterIndented:36:writer.close() |==> <NO-OP>
+184:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriter:44:writer.write(record) |==> <NO-OP>
+185:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriter:45:TestUtils.validateBytesAgainstFile(out.toByteArray(), StaticTestRecords.RESOURCES_SUMMERLAND_MARC_JSON_JSON) |==> <NO-OP>
+186:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriter:46:writer.close() |==> <NO-OP>
+187:LVR:TRUE:FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterIndented:56:true |==> false
+188:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterIndented:56:writer.setIndent(true) |==> <NO-OP>
+189:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterIndented:57:writer.write(record) |==> <NO-OP>
+190:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterIndented:58:TestUtils.validateBytesAgainstFile(out.toByteArray(), StaticTestRecords.RESOURCES_SUMMERLAND_INDENTED_MARC_JSON_JSON) |==> <NO-OP>
+191:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterIndented:59:writer.close() |==> <NO-OP>
+192:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:68:assertNotNull(StaticTestRecords.RESOURCES_BRKRTEST_MRC, input) |==> <NO-OP>
+193:LVR:TRUE:FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:70:true |==> false
+194:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:70:writer.setIndent(true) |==> <NO-OP>
+195:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:71:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+196:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:76:writer.write(record) |==> <NO-OP>
+197:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:78:writer.close() |==> <NO-OP>
+198:COR:line.matches("[ ]*\"a\":\"This is a test of diacritics.*"):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:84:line.matches("[ ]*\"a\":\"This is a test of diacritics.*") |==> false
+199:COR:line.matches("[ ]*\"a\":\"This is a test of diacritics.*"):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:84:line.matches("[ ]*\"a\":\"This is a test of diacritics.*") |==> true
+200:LVR:0:POS:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:87:0 |==> 1
+201:LVR:0:NEG:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:87:0 |==> -1
+202:ROR:<(int,int):!=(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:87:i < lineParts.length |==> i != lineParts.length
+203:ROR:<(int,int):<=(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:87:i < lineParts.length |==> i <= lineParts.length
+204:ROR:<(int,int):FALSE(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:87:i < lineParts.length |==> false
+205:COR:lineParts[i].startsWith("the tilde in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:89:lineParts[i].startsWith("the tilde in ") |==> false
+206:COR:lineParts[i].startsWith("the tilde in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:89:lineParts[i].startsWith("the tilde in ") |==> true
+207:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:90:assertTrue("Incorrect value for tilde", lineParts[i].equals("the tilde in man\\u0303ana")) |==> <NO-OP>
+208:COR:lineParts[i].startsWith("the grave accent in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:91:lineParts[i].startsWith("the grave accent in ") |==> false
+209:COR:lineParts[i].startsWith("the grave accent in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:91:lineParts[i].startsWith("the grave accent in ") |==> true
+210:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:92:assertTrue("Incorrect value for grave", lineParts[i].equals("the grave accent in tre\\u0300s")) |==> <NO-OP>
+211:COR:lineParts[i].startsWith("the acute accent in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:93:lineParts[i].startsWith("the acute accent in ") |==> false
+212:COR:lineParts[i].startsWith("the acute accent in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:93:lineParts[i].startsWith("the acute accent in ") |==> true
+213:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:94:assertTrue("Incorrect value for acute", lineParts[i].equals("the acute accent in de\\u0301sire\\u0301e")) |==> <NO-OP>
+214:COR:lineParts[i].startsWith("the circumflex in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:95:lineParts[i].startsWith("the circumflex in ") |==> false
+215:COR:lineParts[i].startsWith("the circumflex in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:95:lineParts[i].startsWith("the circumflex in ") |==> true
+216:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:96:assertTrue("Incorrect value for macron", lineParts[i].equals("the circumflex in co\\u0302te")) |==> <NO-OP>
+217:COR:lineParts[i].startsWith("the macron in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:97:lineParts[i].startsWith("the macron in ") |==> false
+218:COR:lineParts[i].startsWith("the macron in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:97:lineParts[i].startsWith("the macron in ") |==> true
+219:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:98:assertTrue("Incorrect value for macron", lineParts[i].equals("the macron in To\\u0304kyo")) |==> <NO-OP>
+220:COR:lineParts[i].startsWith("the breve in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:99:lineParts[i].startsWith("the breve in ") |==> false
+221:COR:lineParts[i].startsWith("the breve in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:99:lineParts[i].startsWith("the breve in ") |==> true
+222:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:100:assertTrue("Incorrect value for breve", lineParts[i].equals("the breve in russkii\\u0306")) |==> <NO-OP>
+223:COR:lineParts[i].startsWith("the dot above in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:101:lineParts[i].startsWith("the dot above in ") |==> false
+224:COR:lineParts[i].startsWith("the dot above in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:101:lineParts[i].startsWith("the dot above in ") |==> true
+225:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:102:assertTrue("Incorrect value for dot above", lineParts[i].equals("the dot above in z\\u0307aba")) |==> <NO-OP>
+226:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:103:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> false
+227:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:103:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> true
+228:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:104:assertTrue("Incorrect value for umlaut", lineParts[i].equals("the dieresis (umlaut) in Lo\\u0308wenbra\\u0308u")) |==> <NO-OP>
+229:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8:108:testoutput.close() |==> <NO-OP>
+230:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:117:assertNotNull(StaticTestRecords.RESOURCES_BRKRTEST_MRC, input) |==> <NO-OP>
+231:LVR:TRUE:FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:119:true |==> false
+232:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:119:writer.setIndent(true) |==> <NO-OP>
+233:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:120:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+234:LVR:TRUE:FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:121:true |==> false
+235:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:121:writer.setUnicodeNormalization(true) |==> <NO-OP>
+236:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:126:writer.write(record) |==> <NO-OP>
+237:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:128:writer.close() |==> <NO-OP>
+238:COR:line.matches("[ ]*\"a\":\"This is a test of diacritics.*"):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:134:line.matches("[ ]*\"a\":\"This is a test of diacritics.*") |==> false
+239:COR:line.matches("[ ]*\"a\":\"This is a test of diacritics.*"):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:134:line.matches("[ ]*\"a\":\"This is a test of diacritics.*") |==> true
+240:LVR:0:POS:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:137:0 |==> 1
+241:LVR:0:NEG:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:137:0 |==> -1
+242:ROR:<(int,int):!=(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:137:i < lineParts.length |==> i != lineParts.length
+243:ROR:<(int,int):<=(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:137:i < lineParts.length |==> i <= lineParts.length
+244:ROR:<(int,int):FALSE(int,int):org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:137:i < lineParts.length |==> false
+245:COR:lineParts[i].startsWith("the tilde in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:139:lineParts[i].startsWith("the tilde in ") |==> false
+246:COR:lineParts[i].startsWith("the tilde in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:139:lineParts[i].startsWith("the tilde in ") |==> true
+247:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:140:assertTrue("Incorrect normalized value for tilde accent", lineParts[i].equals("the tilde in ma\u00f1ana")) |==> <NO-OP>
+248:COR:lineParts[i].startsWith("the grave accent in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:141:lineParts[i].startsWith("the grave accent in ") |==> false
+249:COR:lineParts[i].startsWith("the grave accent in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:141:lineParts[i].startsWith("the grave accent in ") |==> true
+250:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:142:assertTrue("Incorrect normalized value for grave accent", lineParts[i].equals("the grave accent in tr\u00e8s")) |==> <NO-OP>
+251:COR:lineParts[i].startsWith("the acute accent in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:143:lineParts[i].startsWith("the acute accent in ") |==> false
+252:COR:lineParts[i].startsWith("the acute accent in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:143:lineParts[i].startsWith("the acute accent in ") |==> true
+253:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:144:assertTrue("Incorrect normalized value for acute accent", lineParts[i].equals("the acute accent in d\u00e9sir\u00e9e")) |==> <NO-OP>
+254:COR:lineParts[i].startsWith("the circumflex in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:145:lineParts[i].startsWith("the circumflex in ") |==> false
+255:COR:lineParts[i].startsWith("the circumflex in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:145:lineParts[i].startsWith("the circumflex in ") |==> true
+256:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:146:assertTrue("Incorrect normalized value for circumflex", lineParts[i].equals("the circumflex in c\u00f4te")) |==> <NO-OP>
+257:COR:lineParts[i].startsWith("the macron in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:147:lineParts[i].startsWith("the macron in ") |==> false
+258:COR:lineParts[i].startsWith("the macron in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:147:lineParts[i].startsWith("the macron in ") |==> true
+259:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:148:assertTrue("Incorrect normalized value for macron", lineParts[i].equals("the macron in T\\u014dkyo")) |==> <NO-OP>
+260:COR:lineParts[i].startsWith("the breve in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:149:lineParts[i].startsWith("the breve in ") |==> false
+261:COR:lineParts[i].startsWith("the breve in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:149:lineParts[i].startsWith("the breve in ") |==> true
+262:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:150:assertTrue("Incorrect normalized value for breve", lineParts[i].equals("the breve in russki\\u012d")) |==> <NO-OP>
+263:COR:lineParts[i].startsWith("the dot above in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:151:lineParts[i].startsWith("the dot above in ") |==> false
+264:COR:lineParts[i].startsWith("the dot above in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:151:lineParts[i].startsWith("the dot above in ") |==> true
+265:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:152:assertTrue("Incorrect normalized value for dot above", lineParts[i].equals("the dot above in \\u017caba")) |==> <NO-OP>
+266:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):TRUE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:153:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> false
+267:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):FALSE:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:153:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> true
+268:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:154:assertTrue("Incorrect normalized value for umlaut", lineParts[i].equals("the dieresis (umlaut) in L\u00f6wenbr\u00e4u")) |==> <NO-OP>
+269:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testMarcJsonWriterConvertedToUTF8AndNormalized:158:testoutput.close() |==> <NO-OP>
+270:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:167:writer.write(record) |==> <NO-OP>
+271:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:168:writer.close() |==> <NO-OP>
+272:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:172:assertTrue(marcReader.hasNext()) |==> <NO-OP>
+273:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:174:TestUtils.validateFreewheelingBobDylanRecord(record) |==> <NO-OP>
+274:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:175:assertFalse(marcReader.hasNext()) |==> <NO-OP>
+275:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead:176:in.close() |==> <NO-OP>
+276:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:185:writer.write(record) |==> <NO-OP>
+277:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:186:writer.close() |==> <NO-OP>
+278:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:190:assertTrue(marcReader.hasNext()) |==> <NO-OP>
+279:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:191:TestUtils.validateFreewheelingBobDylanRecord(marcReader.next()) |==> <NO-OP>
+280:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:192:assertFalse(marcReader.hasNext()) |==> <NO-OP>
+281:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:193:in.close() |==> <NO-OP>
+282:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@testJsonWriteAndRead2:194:out.close() |==> <NO-OP>
+283:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getJSONRecordFromFile:199:assertNotNull(fileName, input) |==> <NO-OP>
+284:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getJSONRecordFromFile:201:assertTrue(reader.hasNext()) |==> <NO-OP>
+285:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getJSONRecordFromFile:203:TestUtils.validateFreewheelingBobDylanRecord(record) |==> <NO-OP>
+286:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getJSONRecordFromFile:204:assertFalse(reader.hasNext()) |==> <NO-OP>
+287:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getSummerlandRecord:210:assertNotNull(StaticTestRecords.RESOURCES_SUMMERLAND_MRC, input) |==> <NO-OP>
+288:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getSummerlandRecord:212:assertTrue("have at least one record", reader.hasNext()) |==> <NO-OP>
+289:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getSummerlandRecord:214:assertFalse("Only one record", reader.hasNext()) |==> <NO-OP>
+290:STD:<CALL>:<NO-OP>:org.marc4j.test.JsonWriterTest@getSummerlandRecord:215:input.close() |==> <NO-OP>
+291:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testConstructor:13:assertNotNull("leader is null", leader) |==> <NO-OP>
+292:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testUnmarshal:18:leader.unmarshal("00714cam a2200205 a 4500") |==> <NO-OP>
+293:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testUnmarshal:19:assertEquals("00714cam a2200205 a 4500", leader.toString()) |==> <NO-OP>
+294:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testUnmarshalSubfieldCodeLength:24:leader.unmarshal("00714cam a2100205 a 4500") |==> <NO-OP>
+295:LVR:POS:0:org.marc4j.test.LeaderTest@testUnmarshalSubfieldCodeLength:25:1 |==> 0
+296:LVR:POS:NEG:org.marc4j.test.LeaderTest@testUnmarshalSubfieldCodeLength:25:1 |==> -1
+297:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testUnmarshalSubfieldCodeLength:25:assertEquals(1, leader.getSubfieldCodeLength()) |==> <NO-OP>
+298:STD:<CALL>:<NO-OP>:org.marc4j.test.LeaderTest@testMarshal:30:assertEquals("00714cam a2200205 a 4500", leader.marshal()) |==> <NO-OP>
+299:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcStreamWriterTest@testMarcStreamWriter:25:writer.write(record) |==> <NO-OP>
+300:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcStreamWriterTest@testMarcStreamWriter:27:writer.close() |==> <NO-OP>
+301:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcStreamWriterTest@testMarcStreamWriter:28:TestUtils.validateBytesAgainstFile(out.toByteArray(), StaticTestRecords.RESOURCES_SUMMERLAND_MRC) |==> <NO-OP>
+302:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:27:assertNotNull(input) |==> <NO-OP>
+303:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:30:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+304:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:33:TestUtils.validateKavalieAndClayRecord(record1) |==> <NO-OP>
+305:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:35:assertTrue("Should have at least two records", reader.hasNext()) |==> <NO-OP>
+306:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:37:TestUtils.validateSummerlandRecord(record2) |==> <NO-OP>
+307:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:39:assertFalse(" have more than two records", reader.hasNext()) |==> <NO-OP>
+308:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testMarcXmlReader:40:input.close() |==> <NO-OP>
+309:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testReadIndicatorlessRecord:46:assertNotNull(input) |==> <NO-OP>
+310:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlReaderTest@testReadIndicatorlessRecord:48:assertTrue(reader.hasNext()) |==> <NO-OP>
+311:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriter:38:true |==> false
+312:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriter:40:writer.write(record) |==> <NO-OP>
+313:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriter:42:writer.close() |==> <NO-OP>
+314:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriter:43:TestUtils.validateStringAgainstFile(new String(out.toByteArray()), StaticTestRecords.RESOURCES_SUMMERLAND_XML) |==> <NO-OP>
+315:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:51:assertNotNull(input) |==> <NO-OP>
+316:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:52:true |==> false
+317:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:53:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+318:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:57:writer.write(record) |==> <NO-OP>
+319:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:59:input.close() |==> <NO-OP>
+320:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:60:writer.close() |==> <NO-OP>
+321:COR:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:64:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*") |==> false
+322:COR:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:64:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*") |==> true
+323:COR:linePart.startsWith("the tilde in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:67:linePart.startsWith("the tilde in ") |==> false
+324:COR:linePart.startsWith("the tilde in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:67:linePart.startsWith("the tilde in ") |==> true
+325:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:68:assertTrue("Incorrect value for tilde", linePart.equals("the tilde in man\u0303ana")) |==> <NO-OP>
+326:COR:linePart.startsWith("the grave accent in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:69:linePart.startsWith("the grave accent in ") |==> false
+327:COR:linePart.startsWith("the grave accent in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:69:linePart.startsWith("the grave accent in ") |==> true
+328:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:70:assertTrue("Incorrect value for grave", linePart.equals("the grave accent in tre\u0300s")) |==> <NO-OP>
+329:COR:linePart.startsWith("the acute accent in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:71:linePart.startsWith("the acute accent in ") |==> false
+330:COR:linePart.startsWith("the acute accent in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:71:linePart.startsWith("the acute accent in ") |==> true
+331:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:72:assertTrue("Incorrect value for acute", linePart.equals("the acute accent in de\u0301sire\u0301e")) |==> <NO-OP>
+332:COR:linePart.startsWith("the circumflex in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:73:linePart.startsWith("the circumflex in ") |==> false
+333:COR:linePart.startsWith("the circumflex in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:73:linePart.startsWith("the circumflex in ") |==> true
+334:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:74:assertTrue("Incorrect value for macron", linePart.equals("the circumflex in co\u0302te")) |==> <NO-OP>
+335:COR:linePart.startsWith("the macron in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:75:linePart.startsWith("the macron in ") |==> false
+336:COR:linePart.startsWith("the macron in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:75:linePart.startsWith("the macron in ") |==> true
+337:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:76:assertTrue("Incorrect value for macron", linePart.equals("the macron in To\u0304kyo")) |==> <NO-OP>
+338:COR:linePart.startsWith("the breve in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:77:linePart.startsWith("the breve in ") |==> false
+339:COR:linePart.startsWith("the breve in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:77:linePart.startsWith("the breve in ") |==> true
+340:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:78:assertTrue("Incorrect value for breve", linePart.equals("the breve in russkii\u0306")) |==> <NO-OP>
+341:COR:linePart.startsWith("the dot above in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:79:linePart.startsWith("the dot above in ") |==> false
+342:COR:linePart.startsWith("the dot above in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:79:linePart.startsWith("the dot above in ") |==> true
+343:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:80:assertTrue("Incorrect value for dot above", linePart.equals("the dot above in z\u0307aba")) |==> <NO-OP>
+344:COR:linePart.startsWith("the dieresis (umlaut) in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:81:linePart.startsWith("the dieresis (umlaut) in ") |==> false
+345:COR:linePart.startsWith("the dieresis (umlaut) in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:81:linePart.startsWith("the dieresis (umlaut) in ") |==> true
+346:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:82:assertTrue("Incorrect value for umlaut", linePart.equals("the dieresis (umlaut) in Lo\u0308wenbra\u0308u")) |==> <NO-OP>
+347:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterNormalized:86:testoutput.close() |==> <NO-OP>
+348:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:94:badField.setTag("911") |==> <NO-OP>
+349:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:95:badField.addSubfield(factory.newSubfield('a', "HAZMARC - INDICATORLESS FIELD DETECTED - MOPP LEVEL 4")) |==> <NO-OP>
+350:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:96:record.addVariableField(badField) |==> <NO-OP>
+351:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:99:true |==> false
+352:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:100:writer.write(record) |==> <NO-OP>
+353:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testWriteOfRecordWithIndicatorlessSubfield:101:writer.close() |==> <NO-OP>
+354:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:108:assertNotNull("can\'t find summerland.mrc resource", input) |==> <NO-OP>
+355:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:113:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+356:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:116:writer.write(record) |==> <NO-OP>
+357:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:118:writer.close() |==> <NO-OP>
+358:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:122:assertEquals("document type should be collection", "collection", documentElement.getLocalName()) |==> <NO-OP>
+359:LVR:POS:0:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:124:1 |==> 0
+360:LVR:POS:NEG:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:124:1 |==> -1
+361:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:124:assertEquals("only one child", 1, children.getLength()) |==> <NO-OP>
+362:LVR:0:POS:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:125:0 |==> 1
+363:LVR:0:NEG:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:125:0 |==> -1
+364:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:126:assertEquals("child should be a record", "record", child.getNodeName()) |==> <NO-OP>
+365:LVR:POS:0:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:127:1 |==> 0
+366:LVR:POS:NEG:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:127:1 |==> -1
+367:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testOutputToDOMResult:127:assertEquals("one leader expected", 1, child.getElementsByTagName("leader").getLength()) |==> <NO-OP>
+368:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:137:assertNotNull(input) |==> <NO-OP>
+369:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:138:true |==> false
+370:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:139:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+371:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:140:true |==> false
+372:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:140:writer.setUnicodeNormalization(true) |==> <NO-OP>
+373:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:144:writer.write(record) |==> <NO-OP>
+374:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:146:input.close() |==> <NO-OP>
+375:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:147:writer.close() |==> <NO-OP>
+376:COR:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:151:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*") |==> false
+377:COR:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:151:line.matches("[ ]*<subfield code=\"a\">This is a test of diacritics.*") |==> true
+378:LVR:0:POS:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:153:0 |==> 1
+379:LVR:0:NEG:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:153:0 |==> -1
+380:ROR:<(int,int):!=(int,int):org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:153:i < lineParts.length |==> i != lineParts.length
+381:ROR:<(int,int):<=(int,int):org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:153:i < lineParts.length |==> i <= lineParts.length
+382:ROR:<(int,int):FALSE(int,int):org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:153:i < lineParts.length |==> false
+383:COR:lineParts[i].startsWith("the tilde in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:154:lineParts[i].startsWith("the tilde in ") |==> false
+384:COR:lineParts[i].startsWith("the tilde in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:154:lineParts[i].startsWith("the tilde in ") |==> true
+385:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:155:assertTrue("Incorrect normalized value for tilde accent", lineParts[i].equals("the tilde in ma\u00f1ana")) |==> <NO-OP>
+386:COR:lineParts[i].startsWith("the grave accent in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:156:lineParts[i].startsWith("the grave accent in ") |==> false
+387:COR:lineParts[i].startsWith("the grave accent in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:156:lineParts[i].startsWith("the grave accent in ") |==> true
+388:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:157:assertTrue("Incorrect normalized value for grave accent", lineParts[i].equals("the grave accent in tr\u00e8s")) |==> <NO-OP>
+389:COR:lineParts[i].startsWith("the acute accent in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:158:lineParts[i].startsWith("the acute accent in ") |==> false
+390:COR:lineParts[i].startsWith("the acute accent in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:158:lineParts[i].startsWith("the acute accent in ") |==> true
+391:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:159:assertTrue("Incorrect normalized value for acute accent", lineParts[i].equals("the acute accent in d\u00e9sir\u00e9e")) |==> <NO-OP>
+392:COR:lineParts[i].startsWith("the circumflex in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:160:lineParts[i].startsWith("the circumflex in ") |==> false
+393:COR:lineParts[i].startsWith("the circumflex in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:160:lineParts[i].startsWith("the circumflex in ") |==> true
+394:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:161:assertTrue("Incorrect normalized value for circumflex", lineParts[i].equals("the circumflex in c\u00f4te")) |==> <NO-OP>
+395:COR:lineParts[i].startsWith("the macron in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:162:lineParts[i].startsWith("the macron in ") |==> false
+396:COR:lineParts[i].startsWith("the macron in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:162:lineParts[i].startsWith("the macron in ") |==> true
+397:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:163:assertTrue("Incorrect normalized value for macron", lineParts[i].equals("the macron in T\u014dkyo")) |==> <NO-OP>
+398:COR:lineParts[i].startsWith("the breve in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:164:lineParts[i].startsWith("the breve in ") |==> false
+399:COR:lineParts[i].startsWith("the breve in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:164:lineParts[i].startsWith("the breve in ") |==> true
+400:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:165:assertTrue("Incorrect normalized value for breve", lineParts[i].equals("the breve in russki\u012d")) |==> <NO-OP>
+401:COR:lineParts[i].startsWith("the dot above in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:166:lineParts[i].startsWith("the dot above in ") |==> false
+402:COR:lineParts[i].startsWith("the dot above in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:166:lineParts[i].startsWith("the dot above in ") |==> true
+403:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:167:assertTrue("Incorrect normalized value for dot above", lineParts[i].equals("the dot above in \u017caba")) |==> <NO-OP>
+404:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:168:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> false
+405:COR:lineParts[i].startsWith("the dieresis (umlaut) in "):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:168:lineParts[i].startsWith("the dieresis (umlaut) in ") |==> true
+406:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterConvertedToUTF8AndNormalized:169:assertTrue("Incorrect normalized value for umlaut", lineParts[i].equals("the dieresis (umlaut) in L\u00f6wenbr\u00e4u")) |==> <NO-OP>
+407:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:180:assertNotNull(input) |==> <NO-OP>
+408:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:182:true |==> false
+409:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:188:writer.setConverter(new AnselToUnicode()) |==> <NO-OP>
+410:LVR:TRUE:FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:189:true |==> false
+411:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:189:writer.setCheckNonXMLChars(true) |==> <NO-OP>
+412:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:193:writer.write(record) |==> <NO-OP>
+413:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:195:input.close() |==> <NO-OP>
+414:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:196:writer.close() |==> <NO-OP>
+415:COR:line.matches("[ ]*<leader>.*"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:201:line.matches("[ ]*<leader>.*") |==> false
+416:COR:line.matches("[ ]*<leader>.*"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:201:line.matches("[ ]*<leader>.*") |==> true
+417:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:202:assertTrue(line.contains(">01899cam &lt;U+0014&gt;22004458a 4500<")) |==> <NO-OP>
+418:COR:line.matches("[ ]*<datafield tag=\"010\".*"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:203:line.matches("[ ]*<datafield tag=\"010\".*") |==> false
+419:COR:line.matches("[ ]*<datafield tag=\"010\".*"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:203:line.matches("[ ]*<datafield tag=\"010\".*") |==> true
+420:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:205:assertTrue(line.contains("ind1=\"&lt;U+0014>\"")) |==> <NO-OP>
+421:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:206:assertTrue(line.contains("ind2=\"&lt;U+0014>\"")) |==> <NO-OP>
+422:COR:line.contains("2011035923"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:208:line.contains("2011035923") |==> false
+423:COR:line.contains("2011035923"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:208:line.contains("2011035923") |==> true
+424:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:210:assertTrue(line.contains("<subfield code=\"&lt;U+0014>\">&lt;U+0014&gt; 2011035923</subfield>")) |==> <NO-OP>
+425:COR:line.contains("9781410442444"):TRUE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:212:line.contains("9781410442444") |==> false
+426:COR:line.contains("9781410442444"):FALSE:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:212:line.contains("9781410442444") |==> true
+427:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:214:assertTrue(line.contains("<subfield code=\"&lt;U+0031>\">9781410442444 (hbk.)</subfield>")) |==> <NO-OP>
+428:STD:<CALL>:<NO-OP>:org.marc4j.test.MarcXmlWriterTest@testMarcXmlWriterBadCharacters:217:testoutput.close() |==> <NO-OP>
+429:LVR:0:POS:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:26:0 |==> 1
+430:LVR:0:NEG:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:26:0 |==> -1
+431:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:28:assertNotNull(input) |==> <NO-OP>
+432:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:29:true |==> false
+433:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:29:true |==> false
+434:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:33:2 |==> 0
+435:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:33:2 |==> -2
+436:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:33:assertEquals(2, record.getLeader().getIndicatorCount()) |==> <NO-OP>
+437:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:34:2 |==> 0
+438:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:34:2 |==> -2
+439:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:34:assertEquals(2, record.getLeader().getSubfieldCodeLength()) |==> <NO-OP>
+440:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:35:i++ |==> <NO-OP>
+441:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:37:input.close() |==> <NO-OP>
+442:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:38:1 |==> 0
+443:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:38:1 |==> -1
+444:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testBadLeaderBytes10_11:38:assertEquals(1, i) |==> <NO-OP>
+445:LVR:FALSE:TRUE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:45:false |==> true
+446:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:45:true |==> false
+447:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:46:true |==> false
+448:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:46:assertEquals("default lossless code expansion", true, reader.isTranslateLosslessUnicodeNumericCodeReferencesEnabled()) |==> <NO-OP>
+449:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:48:assertTrue("have a record", reader.hasNext()) |==> <NO-OP>
+450:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:50:assertFalse("too many records", reader.hasNext()) |==> <NO-OP>
+451:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingEnabled:53:assertEquals("Should be expanded", "Character Test", sf.getData()) |==> <NO-OP>
+452:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:59:true |==> false
+453:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:59:true |==> false
+454:LVR:FALSE:TRUE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:60:false |==> true
+455:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:60:reader.setTranslateLosslessUnicodeNumericCodeReferencesEnabled(false) |==> <NO-OP>
+456:LVR:FALSE:TRUE:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:61:false |==> true
+457:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:61:assertEquals("default lossless code expansion", false, reader.isTranslateLosslessUnicodeNumericCodeReferencesEnabled()) |==> <NO-OP>
+458:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:63:assertTrue("have a record", reader.hasNext()) |==> <NO-OP>
+459:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:65:assertFalse("too many records", reader.hasNext()) |==> <NO-OP>
+460:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testNumericCodeEscapingDisabled:68:assertEquals("Should NOT be expanded", "&#x0043;haracter Test", sf.getData()) |==> <NO-OP>
+461:LVR:0:POS:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:73:0 |==> 1
+462:LVR:0:NEG:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:73:0 |==> -1
+463:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:74:r.getLeader().setCharCodingScheme(' ') |==> <NO-OP>
+464:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:76:r.addVariableField(f) |==> <NO-OP>
+465:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:79:writer.write(r) |==> <NO-OP>
+466:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@getInputStreamForTestRecordWithNumericCoding:80:writer.close() |==> <NO-OP>
+467:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord:89:assertNotNull(input) |==> <NO-OP>
+468:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord:93:true |==> false
+469:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord:93:true |==> false
+470:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord:101:assertEquals(good001.getData(), "360945") |==> <NO-OP>
+471:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord:106:assertEquals(good001.getData(), "360946") |==> <NO-OP>
+472:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:113:assertNotNull(input) |==> <NO-OP>
+473:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:117:true |==> false
+474:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:117:true |==> false
+475:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:122:965 |==> 0
+476:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:122:965 |==> -965
+477:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord2:122:assertEquals(fields.size(), 965) |==> <NO-OP>
+478:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:129:assertNotNull(input) |==> <NO-OP>
+479:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:134:true |==> false
+480:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:134:true |==> false
+481:COR:record.getControlNumber().equals("003051567"):TRUE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:139:record.getControlNumber().equals("003051567") |==> false
+482:COR:record.getControlNumber().equals("003051567"):FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:139:record.getControlNumber().equals("003051567") |==> true
+483:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:142:12582 |==> 0
+484:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:142:12582 |==> -12582
+485:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongMarcRecord3:142:assertEquals(fields.size(), 12582) |==> <NO-OP>
+486:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:157:assertNotNull(input1) |==> <NO-OP>
+487:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:158:assertNotNull(input2) |==> <NO-OP>
+488:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:160:true |==> false
+489:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:160:true |==> false
+490:LVR:FALSE:TRUE:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:161:false |==> true
+491:LVR:FALSE:TRUE:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:161:false |==> true
+492:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:163:reader1.hasNext() && reader2.hasNext() |==> reader1.hasNext() == reader2.hasNext()
+493:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:163:reader1.hasNext() && reader2.hasNext() |==> false
+494:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:163:reader1.hasNext() && reader2.hasNext() |==> reader1.hasNext()
+495:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:163:reader1.hasNext() && reader2.hasNext() |==> reader2.hasNext()
+496:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testPrideAndPrejudice:167:RecordTestingUtils.assertEqualsIgnoreLeader(record2, record1) |==> <NO-OP>
+497:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:175:assertNotNull(input) |==> <NO-OP>
+498:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:176:true |==> false
+499:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:176:true |==> false
+500:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:187:5 |==> 0
+501:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:187:5 |==> -5
+502:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:187:8 |==> 0
+503:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:187:8 |==> -8
+504:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:187:assertEquals("nas", strLeader.substring(5, 8)) |==> <NO-OP>
+505:LVR:0:POS:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:190:0 |==> 1
+506:LVR:0:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:190:0 |==> -1
+507:LVR:POS:0:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:190:5 |==> 0
+508:LVR:POS:NEG:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:190:5 |==> -5
+509:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testTooLongLeaderByteRead:190:assertEquals("99999", strLeader.substring(0, 5)) |==> <NO-OP>
+510:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testParseRecordOnUnorderDirectoryEntries:198:assertNotNull(input) |==> <NO-OP>
+511:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testParseRecordOnUnorderDirectoryEntries:201:true |==> false
+512:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testParseRecordOnUnorderDirectoryEntries:201:true |==> false
+513:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testParseRecordOnUnorderDirectoryEntries:211:fail("Failed to parse record having unordered directory entries") |==> <NO-OP>
+514:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:222:assertNotNull(input) |==> <NO-OP>
+515:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:223:true |==> false
+516:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:223:true |==> false
+517:COR:sf.getData().startsWith("26"):TRUE:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:236:sf.getData().startsWith("26") |==> false
+518:COR:sf.getData().startsWith("26"):FALSE:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:236:sf.getData().startsWith("26") |==> true
+519:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testCyrillicEFix:243:fail("broken cyrillic record should have been fixed") |==> <NO-OP>
+520:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:262:assertNotNull(input) |==> <NO-OP>
+521:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:263:true |==> false
+522:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:263:true |==> false
+523:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record1 != null |==> true
+524:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record2 != null |==> true
+525:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record1 != null && record2 != null |==> record1 != null == (record2 != null)
+526:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record1 != null && record2 != null |==> false
+527:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record1 != null && record2 != null |==> record1 != null
+528:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:269:record1 != null && record2 != null |==> record2 != null
+529:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:270:RecordTestingUtils.assertEqualsIgnoreLeader(record1, record2) |==> <NO-OP>
+530:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record2 != null |==> true
+531:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record3 != null |==> true
+532:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record2 != null && record3 != null |==> record2 != null == (record3 != null)
+533:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record2 != null && record3 != null |==> false
+534:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record2 != null && record3 != null |==> record2 != null
+535:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:271:record2 != null && record3 != null |==> record3 != null
+536:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testGreekMissingCharSetChange:272:RecordTestingUtils.assertEqualsIgnoreLeader(record2, record3) |==> <NO-OP>
+537:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testMangledChineseCharacters:284:assertNotNull(input) |==> <NO-OP>
+538:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testMangledChineseCharacters:285:true |==> false
+539:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testMangledChineseCharacters:285:true |==> false
+540:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testMangledChineseCharacters:296:assertNull("Tested records are unexpectedly different: " + diff23, diff23) |==> <NO-OP>
+541:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testMangledChineseCharacters:297:assertNull("Tested records are unexpectedly different: " + diff34, diff34) |==> <NO-OP>
+542:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testMalformedNCRFix:311:assertNotNull(input) |==> <NO-OP>
+543:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testMalformedNCRFix:312:true |==> false
+544:LVR:TRUE:FALSE:org.marc4j.test.PermissiveReaderTest@testMalformedNCRFix:312:true |==> false
+545:STD:<CALL>:<NO-OP>:org.marc4j.test.PermissiveReaderTest@testMalformedNCRFix:318:assertNull("Tested records are unexpectedly different: " + diff12, diff12) |==> <NO-OP>
+546:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:28:assertNotNull(input) |==> <NO-OP>
+547:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:30:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+548:LVR:0:POS:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:34:0 |==> 1
+549:LVR:0:NEG:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:34:0 |==> -1
+550:ROR:<(int,int):!=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:38:cnt < expectedIDs.length |==> cnt != expectedIDs.length
+551:ROR:<(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:38:cnt < expectedIDs.length |==> cnt <= expectedIDs.length
+552:ROR:<(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:38:cnt < expectedIDs.length |==> false
+553:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:38:assertTrue("Too many records in file", cnt < expectedIDs.length) |==> <NO-OP>
+554:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:39:assertTrue("Expected ID mismatch", record.getRecordId().equals(expectedIDs[cnt])) |==> <NO-OP>
+555:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:40:cnt++ |==> <NO-OP>
+556:ROR:==(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:42:cnt == expectedIDs.length |==> cnt <= expectedIDs.length
+557:ROR:==(int,int):>=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:42:cnt == expectedIDs.length |==> cnt >= expectedIDs.length
+558:ROR:==(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:42:cnt == expectedIDs.length |==> false
+559:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:42:assertTrue("Too few records in file", cnt == expectedIDs.length) |==> <NO-OP>
+560:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongMarcRecord:43:input.close() |==> <NO-OP>
+561:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:49:assertNotNull(input) |==> <NO-OP>
+562:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:54:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+563:LVR:0:POS:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:58:0 |==> 1
+564:LVR:0:NEG:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:58:0 |==> -1
+565:ROR:<(int,int):!=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:62:cnt < expectedIDs.length |==> cnt != expectedIDs.length
+566:ROR:<(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:62:cnt < expectedIDs.length |==> cnt <= expectedIDs.length
+567:ROR:<(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:62:cnt < expectedIDs.length |==> false
+568:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:62:assertTrue("Too many records in file", cnt < expectedIDs.length) |==> <NO-OP>
+569:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:63:assertTrue("Expected ID mismatch", record.getRecordId().equals(expectedIDs[cnt])) |==> <NO-OP>
+570:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:64:cnt++ |==> <NO-OP>
+571:ROR:==(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:66:cnt == expectedIDs.length |==> cnt <= expectedIDs.length
+572:ROR:==(int,int):>=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:66:cnt == expectedIDs.length |==> cnt >= expectedIDs.length
+573:ROR:==(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:66:cnt == expectedIDs.length |==> false
+574:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:66:assertTrue("Too few records in file", cnt == expectedIDs.length) |==> <NO-OP>
+575:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord2:67:input.close() |==> <NO-OP>
+576:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:74:assertNotNull(input) |==> <NO-OP>
+577:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:81:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+578:LVR:0:POS:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:85:0 |==> 1
+579:LVR:0:NEG:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:85:0 |==> -1
+580:ROR:<(int,int):!=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:89:cnt < expectedIDs.length |==> cnt != expectedIDs.length
+581:ROR:<(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:89:cnt < expectedIDs.length |==> cnt <= expectedIDs.length
+582:ROR:<(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:89:cnt < expectedIDs.length |==> false
+583:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:89:assertTrue("Too many records in file", cnt < expectedIDs.length) |==> <NO-OP>
+584:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:90:assertTrue("Expected ID mismatch", record.getRecordId().equals(expectedIDs[cnt])) |==> <NO-OP>
+585:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:91:cnt++ |==> <NO-OP>
+586:ROR:==(int,int):<=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:93:cnt == expectedIDs.length |==> cnt <= expectedIDs.length
+587:ROR:==(int,int):>=(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:93:cnt == expectedIDs.length |==> cnt >= expectedIDs.length
+588:ROR:==(int,int):FALSE(int,int):org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:93:cnt == expectedIDs.length |==> false
+589:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:93:assertTrue("Too few records in file", cnt == expectedIDs.length) |==> <NO-OP>
+590:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordReaderTooLongRecord3:94:input.close() |==> <NO-OP>
+591:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:100:assertNotNull(input) |==> <NO-OP>
+592:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:106:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+593:COR:record.getRecordId().equals("003051567"):TRUE:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:114:record.getRecordId().equals("003051567") |==> false
+594:COR:record.getRecordId().equals("003051567"):FALSE:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:114:record.getRecordId().equals("003051567") |==> true
+595:LVR:TRUE:FALSE:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:116:true |==> false
+596:LVR:TRUE:FALSE:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:116:true |==> false
+597:LVR:POS:0:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:118:12582 |==> 0
+598:LVR:POS:NEG:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:118:12582 |==> -12582
+599:STD:<CALL>:<NO-OP>:org.marc4j.test.RawRecordReaderTest@testRawRecordGetAsRecordForTooLongMarcRecord3:118:assertEquals(fields.size(), 12582) |==> <NO-OP>
+600:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:22:assertNotNull(input) |==> <NO-OP>
+601:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:25:assertTrue("Should have at least one record", reader.hasNext()) |==> <NO-OP>
+602:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:28:TestUtils.validateKavalieAndClayRecord(record1) |==> <NO-OP>
+603:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:30:assertTrue("Should have at least two records", reader.hasNext()) |==> <NO-OP>
+604:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:32:TestUtils.validateSummerlandRecord(record2) |==> <NO-OP>
+605:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:34:assertFalse(" have more than two records", reader.hasNext()) |==> <NO-OP>
+606:STD:<CALL>:<NO-OP>:org.marc4j.test.ReaderTest@testMarcStreamReader:35:input.close() |==> <NO-OP>
+607:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:18:assertEquals("12883376", cn) |==> <NO-OP>
+608:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:21:assertEquals("001", cf.getTag()) |==> <NO-OP>
+609:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:22:assertEquals("12883376", cf.getData()) |==> <NO-OP>
+610:LVR:POS:0:org.marc4j.test.RecordTest@testGetFields:25:15 |==> 0
+611:LVR:POS:NEG:org.marc4j.test.RecordTest@testGetFields:25:15 |==> -15
+612:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:25:assertEquals(15, fieldList.size()) |==> <NO-OP>
+613:LVR:POS:0:org.marc4j.test.RecordTest@testGetFields:28:3 |==> 0
+614:LVR:POS:NEG:org.marc4j.test.RecordTest@testGetFields:28:3 |==> -3
+615:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:28:assertEquals(3, fieldList.size()) |==> <NO-OP>
+616:LVR:POS:0:org.marc4j.test.RecordTest@testGetFields:31:12 |==> 0
+617:LVR:POS:NEG:org.marc4j.test.RecordTest@testGetFields:31:12 |==> -12
+618:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:31:assertEquals(12, fieldList.size()) |==> <NO-OP>
+619:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:34:assertEquals("245", field.getTag()) |==> <NO-OP>
+620:LVR:POS:0:org.marc4j.test.RecordTest@testGetFields:37:3 |==> 0
+621:LVR:POS:NEG:org.marc4j.test.RecordTest@testGetFields:37:3 |==> -3
+622:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:37:assertEquals(3, fieldList.size()) |==> <NO-OP>
+623:LVR:POS:0:org.marc4j.test.RecordTest@testGetFields:41:3 |==> 0
+624:LVR:POS:NEG:org.marc4j.test.RecordTest@testGetFields:41:3 |==> -3
+625:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testGetFields:41:assertEquals(3, fieldList.size()) |==> <NO-OP>
+626:LVR:TRUE:FALSE:org.marc4j.test.RecordTest@testFind:47:true |==> false
+627:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:47:assertEquals(true, field.find("Summerland")) |==> <NO-OP>
+628:LVR:TRUE:FALSE:org.marc4j.test.RecordTest@testFind:48:true |==> false
+629:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:48:assertEquals(true, field.find("Sum*erland")) |==> <NO-OP>
+630:LVR:TRUE:FALSE:org.marc4j.test.RecordTest@testFind:49:true |==> false
+631:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:49:assertEquals(true, field.find("[Cc]habo[a-z]")) |==> <NO-OP>
+632:LVR:TRUE:FALSE:org.marc4j.test.RecordTest@testFind:52:true |==> false
+633:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:52:assertEquals(true, field.find("eng")) |==> <NO-OP>
+634:LVR:POS:0:org.marc4j.test.RecordTest@testFind:55:1 |==> 0
+635:LVR:POS:NEG:org.marc4j.test.RecordTest@testFind:55:1 |==> -1
+636:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:55:assertEquals(1, result.size()) |==> <NO-OP>
+637:LVR:0:POS:org.marc4j.test.RecordTest@testFind:56:0 |==> 1
+638:LVR:0:NEG:org.marc4j.test.RecordTest@testFind:56:0 |==> -1
+639:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:57:assertEquals("245", field.getTag()) |==> <NO-OP>
+640:LVR:POS:0:org.marc4j.test.RecordTest@testFind:60:2 |==> 0
+641:LVR:POS:NEG:org.marc4j.test.RecordTest@testFind:60:2 |==> -2
+642:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:60:assertEquals(2, result.size()) |==> <NO-OP>
+643:LVR:POS:0:org.marc4j.test.RecordTest@testFind:63:1 |==> 0
+644:LVR:POS:NEG:org.marc4j.test.RecordTest@testFind:63:1 |==> -1
+645:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:63:assertEquals(1, result.size()) |==> <NO-OP>
+646:LVR:POS:0:org.marc4j.test.RecordTest@testFind:67:1 |==> 0
+647:LVR:POS:NEG:org.marc4j.test.RecordTest@testFind:67:1 |==> -1
+648:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:67:assertEquals(1, result.size()) |==> <NO-OP>
+649:LVR:0:POS:org.marc4j.test.RecordTest@testFind:70:0 |==> 1
+650:LVR:0:NEG:org.marc4j.test.RecordTest@testFind:70:0 |==> -1
+651:ROR:>(int,int):!=(int,int):org.marc4j.test.RecordTest@testFind:70:result.size() > 0 |==> result.size() != 0
+652:ROR:>(int,int):>=(int,int):org.marc4j.test.RecordTest@testFind:70:result.size() > 0 |==> result.size() >= 0
+653:ROR:>(int,int):FALSE(int,int):org.marc4j.test.RecordTest@testFind:70:result.size() > 0 |==> false
+654:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:70:assertTrue(result.size() > 0) |==> <NO-OP>
+655:LVR:0:POS:org.marc4j.test.RecordTest@testFind:72:0 |==> 1
+656:LVR:0:NEG:org.marc4j.test.RecordTest@testFind:72:0 |==> -1
+657:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testFind:74:assertTrue(agency.matches("DLC")) |==> <NO-OP>
+658:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testCreateRecord:82:assertEquals("00000cam a2200000 a 4500", record.getLeader().marshal()) |==> <NO-OP>
+659:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testCreateRecord:84:record.addVariableField(factory.newControlField("001", "12883376")) |==> <NO-OP>
+660:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testCreateRecord:87:df.addSubfield(factory.newSubfield('a', "Summerland /")) |==> <NO-OP>
+661:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testCreateRecord:88:df.addSubfield(factory.newSubfield('c', "Michael Chabon.")) |==> <NO-OP>
+662:STD:<CALL>:<NO-OP>:org.marc4j.test.RecordTest@testCreateRecord:89:record.addVariableField(df) |==> <NO-OP>
+663:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:30:assertNotNull(input) |==> <NO-OP>
+664:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:36:xmlWriter.write(record) |==> <NO-OP>
+665:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:38:input.close() |==> <NO-OP>
+666:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:39:xmlWriter.close() |==> <NO-OP>
+667:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:40:out1.close() |==> <NO-OP>
+668:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:47:marcWriter.write(record) |==> <NO-OP>
+669:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:49:in.close() |==> <NO-OP>
+670:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:50:marcWriter.close() |==> <NO-OP>
+671:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:52:out2.close() |==> <NO-OP>
+672:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r1 != null |==> true
+673:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r2 != null |==> true
+674:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+675:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r1 != null && r2 != null |==> false
+676:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r1 != null && r2 != null |==> r1 != null
+677:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:62:r1 != null && r2 != null |==> r2 != null
+678:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:63:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+679:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r1 != null |==> true
+680:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r2 != null |==> true
+681:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+682:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r1 != null && r2 != null |==> false
+683:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r1 != null && r2 != null |==> r1 != null
+684:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtrip:64:r1 != null && r2 != null |==> r2 != null
+685:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:79:assertNotNull(input) |==> <NO-OP>
+686:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:83:marcWriter1.setConverter(new AnselToUnicode()) |==> <NO-OP>
+687:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:86:marcWriter1.write(record) |==> <NO-OP>
+688:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:88:input.close() |==> <NO-OP>
+689:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:89:marcWriter1.close() |==> <NO-OP>
+690:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:90:out1.close() |==> <NO-OP>
+691:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:95:marcWriter2.setConverter(new UnicodeToAnsel()) |==> <NO-OP>
+692:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:98:marcWriter2.write(record) |==> <NO-OP>
+693:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:100:in.close() |==> <NO-OP>
+694:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:101:marcWriter2.close() |==> <NO-OP>
+695:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:102:out2.close() |==> <NO-OP>
+696:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r1 != null |==> true
+697:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r2 != null |==> true
+698:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+699:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r1 != null && r2 != null |==> false
+700:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r1 != null && r2 != null |==> r1 != null
+701:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:112:r1 != null && r2 != null |==> r2 != null
+702:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:113:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+703:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r1 != null |==> true
+704:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r2 != null |==> true
+705:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+706:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r1 != null && r2 != null |==> false
+707:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r1 != null && r2 != null |==> r1 != null
+708:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripConverted:114:r1 != null && r2 != null |==> r2 != null
+709:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:133:assertNotNull(input) |==> <NO-OP>
+710:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:137:marcWriter1.setConverter(new UnicodeToAnsel()) |==> <NO-OP>
+711:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:140:marcWriter1.write(record) |==> <NO-OP>
+712:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:142:input.close() |==> <NO-OP>
+713:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:143:marcWriter1.close() |==> <NO-OP>
+714:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:144:out1.close() |==> <NO-OP>
+715:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:149:marcWriter2.setConverter(new AnselToUnicode()) |==> <NO-OP>
+716:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:152:marcWriter2.write(record) |==> <NO-OP>
+717:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:154:in.close() |==> <NO-OP>
+718:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:155:marcWriter2.close() |==> <NO-OP>
+719:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:156:out2.close() |==> <NO-OP>
+720:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r1 != null |==> true
+721:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r2 != null |==> true
+722:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+723:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r1 != null && r2 != null |==> false
+724:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r1 != null && r2 != null |==> r1 != null
+725:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:166:r1 != null && r2 != null |==> r2 != null
+726:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:167:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+727:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r1 != null |==> true
+728:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r2 != null |==> true
+729:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+730:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r1 != null && r2 != null |==> false
+731:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r1 != null && r2 != null |==> r1 != null
+732:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConverted:168:r1 != null && r2 != null |==> r2 != null
+733:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:187:assertNotNull(input) |==> <NO-OP>
+734:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:191:marcWriter1.setConverter(new UnicodeToAnsel()) |==> <NO-OP>
+735:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:194:marcWriter1.write(record) |==> <NO-OP>
+736:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:196:input.close() |==> <NO-OP>
+737:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:197:marcWriter1.close() |==> <NO-OP>
+738:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:198:out1.close() |==> <NO-OP>
+739:LVR:TRUE:FALSE:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:201:true |==> false
+740:LVR:TRUE:FALSE:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:201:true |==> false
+741:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:206:marcWriter2.write(record) |==> <NO-OP>
+742:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:208:in.close() |==> <NO-OP>
+743:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:209:marcWriter2.close() |==> <NO-OP>
+744:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:210:out2.close() |==> <NO-OP>
+745:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r1 != null |==> true
+746:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r2 != null |==> true
+747:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+748:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r1 != null && r2 != null |==> false
+749:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r1 != null && r2 != null |==> r1 != null
+750:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:220:r1 != null && r2 != null |==> r2 != null
+751:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:221:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+752:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r1 != null |==> true
+753:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r2 != null |==> true
+754:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+755:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r1 != null && r2 != null |==> false
+756:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r1 != null && r2 != null |==> r1 != null
+757:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testWriteAndReadRoundtripChineseConvertedPermissive:222:r1 != null && r2 != null |==> r2 != null
+758:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:237:assertNotNull(input) |==> <NO-OP>
+759:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:241:xmlWriter.setConverter(new AnselToUnicode()) |==> <NO-OP>
+760:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:244:xmlWriter.write(record) |==> <NO-OP>
+761:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:246:input.close() |==> <NO-OP>
+762:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:247:xmlWriter.close() |==> <NO-OP>
+763:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:248:out1.close() |==> <NO-OP>
+764:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:253:marcWriter.setConverter(new UnicodeToAnsel()) |==> <NO-OP>
+765:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:256:marcWriter.write(record) |==> <NO-OP>
+766:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:258:in.close() |==> <NO-OP>
+767:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:259:marcWriter.close() |==> <NO-OP>
+768:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:261:out2.close() |==> <NO-OP>
+769:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:266:xmlWriter2.setConverter(new AnselToUnicode()) |==> <NO-OP>
+770:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:269:xmlWriter2.write(record) |==> <NO-OP>
+771:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:271:in2.close() |==> <NO-OP>
+772:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:272:xmlWriter2.close() |==> <NO-OP>
+773:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:274:out3.close() |==> <NO-OP>
+774:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r1 != null |==> true
+775:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r2 != null |==> true
+776:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+777:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r1 != null && r2 != null |==> false
+778:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r1 != null && r2 != null |==> r1 != null
+779:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:284:r1 != null && r2 != null |==> r2 != null
+780:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:285:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+781:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r1 != null |==> true
+782:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r2 != null |==> true
+783:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+784:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r1 != null && r2 != null |==> false
+785:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r1 != null && r2 != null |==> r1 != null
+786:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLRoundtrip:286:r1 != null && r2 != null |==> r2 != null
+787:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:307:assertNotNull(input) |==> <NO-OP>
+788:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:311:xmlWriter.setConverter(new AnselToUnicode()) |==> <NO-OP>
+789:LVR:TRUE:FALSE:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:312:true |==> false
+790:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:312:xmlWriter.setUnicodeNormalization(true) |==> <NO-OP>
+791:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:315:xmlWriter.write(record) |==> <NO-OP>
+792:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:317:input.close() |==> <NO-OP>
+793:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:318:xmlWriter.close() |==> <NO-OP>
+794:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:319:out1.close() |==> <NO-OP>
+795:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:324:marcWriter.setConverter(new UnicodeToAnsel()) |==> <NO-OP>
+796:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:327:marcWriter.write(record) |==> <NO-OP>
+797:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:329:in.close() |==> <NO-OP>
+798:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:330:marcWriter.close() |==> <NO-OP>
+799:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:332:out2.close() |==> <NO-OP>
+800:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:334:assertNotNull(inputCompare1) |==> <NO-OP>
+801:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r1 != null |==> true
+802:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r2 != null |==> true
+803:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+804:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r1 != null && r2 != null |==> false
+805:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r1 != null && r2 != null |==> r1 != null
+806:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:342:r1 != null && r2 != null |==> r2 != null
+807:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:343:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+808:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r1 != null |==> true
+809:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r2 != null |==> true
+810:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+811:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r1 != null && r2 != null |==> false
+812:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r1 != null && r2 != null |==> r1 != null
+813:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToXMLNormalizedRoundtrip:344:r1 != null && r2 != null |==> r2 != null
+814:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:360:assertNotNull(input) |==> <NO-OP>
+815:LVR:TRUE:FALSE:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:364:true |==> false
+816:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:364:marcWriter1.setConverter(new UnicodeToAnsel(true)) |==> <NO-OP>
+817:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:367:marcWriter1.write(record) |==> <NO-OP>
+818:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:369:input.close() |==> <NO-OP>
+819:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:370:marcWriter1.close() |==> <NO-OP>
+820:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:371:out1.close() |==> <NO-OP>
+821:LVR:TRUE:FALSE:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:377:true |==> false
+822:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:377:conv.setTranslateNCR(true) |==> <NO-OP>
+823:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:378:marcWriter2.setConverter(conv) |==> <NO-OP>
+824:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:381:marcWriter2.write(record) |==> <NO-OP>
+825:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:383:in.close() |==> <NO-OP>
+826:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:384:marcWriter2.close() |==> <NO-OP>
+827:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:385:out2.close() |==> <NO-OP>
+828:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r1 != null |==> true
+829:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r2 != null |==> true
+830:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+831:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r1 != null && r2 != null |==> false
+832:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r1 != null && r2 != null |==> r1 != null
+833:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:395:r1 != null && r2 != null |==> r2 != null
+834:STD:<CALL>:<NO-OP>:org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:396:RecordTestingUtils.assertEqualsIgnoreLeader(r1, r2) |==> <NO-OP>
+835:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r1 != null |==> true
+836:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r2 != null |==> true
+837:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r1 != null && r2 != null |==> r1 != null == (r2 != null)
+838:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r1 != null && r2 != null |==> false
+839:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r1 != null && r2 != null |==> r1 != null
+840:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.RoundtripTest@testConvertToMarc8NCRRoundtrip:397:r1 != null && r2 != null |==> r2 != null
+841:STD:<CALL>:<NO-OP>:org.marc4j.test.SubfieldTest@testContructor:19:assertNotNull("subfield is null", sf) |==> <NO-OP>
+842:STD:<CALL>:<NO-OP>:org.marc4j.test.SubfieldTest@testContructor:21:assertEquals('a', sf.getCode()) |==> <NO-OP>
+843:STD:<CALL>:<NO-OP>:org.marc4j.test.SubfieldTest@testContructor:23:assertEquals('a', sf.getCode()) |==> <NO-OP>
+844:STD:<CALL>:<NO-OP>:org.marc4j.test.SubfieldTest@testContructor:24:assertEquals("Summerland", sf.getData()) |==> <NO-OP>
+845:COR:actualId.equals(expected.getControlNumber()):TRUE:org.marc4j.test.utils.RecordTestingUtils@assertEquals:25:actualId.equals(expected.getControlNumber()) |==> false
+846:COR:actualId.equals(expected.getControlNumber()):FALSE:org.marc4j.test.utils.RecordTestingUtils@assertEquals:25:actualId.equals(expected.getControlNumber()) |==> true
+847:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEquals:26:assertTrue(errmsg, expected.toString().equals(actual.toString())) |==> <NO-OP>
+848:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEquals:28:fail(errmsg) |==> <NO-OP>
+849:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertNotEqual:40:assertFalse("Records unexpectedly the same: " + actualId, expected.toString().equals(actual.toString())) |==> <NO-OP>
+850:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId == null |==> false
+851:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:expectedId == null |==> false
+852:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId == null && expectedId == null |==> actualId == null == (expectedId == null)
+853:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId == null && expectedId == null |==> false
+854:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId == null && expectedId == null |==> actualId == null
+855:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId == null && expectedId == null |==> expectedId == null
+856:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId != null |==> true
+857:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId != null && actualId.equals(expectedId) |==> actualId != null == actualId.equals(expectedId)
+858:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId != null && actualId.equals(expectedId) |==> false
+859:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId != null && actualId.equals(expectedId) |==> actualId != null
+860:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:actualId != null && actualId.equals(expectedId) |==> actualId.equals(expectedId)
+861:COR:||(boolean,boolean):!=(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:(actualId == null && expectedId == null) || actualId != null && actualId.equals(expectedId) |==> (actualId == null && expectedId == null) != (actualId != null && actualId.equals(expectedId))
+862:COR:||(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:(actualId == null && expectedId == null) || actualId != null && actualId.equals(expectedId) |==> (actualId == null && expectedId == null)
+863:COR:||(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:(actualId == null && expectedId == null) || actualId != null && actualId.equals(expectedId) |==> actualId != null && actualId.equals(expectedId)
+864:COR:||(boolean,boolean):TRUE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:52:(actualId == null && expectedId == null) || actualId != null && actualId.equals(expectedId) |==> true
+865:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:53:24 |==> 0
+866:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:53:24 |==> -24
+867:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:53:24 |==> 0
+868:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:53:24 |==> -24
+869:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:53:assertTrue(errmsg, expected.toString().substring(24).equals(actual.toString().substring(24))) |==> <NO-OP>
+870:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:55:fail(errmsg) |==> <NO-OP>
+871:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:67:24 |==> 0
+872:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:67:24 |==> -24
+873:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:68:24 |==> 0
+874:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:68:24 |==> -24
+875:COR:actualId.equals(expected.getControlNumber()):TRUE:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:69:actualId.equals(expected.getControlNumber()) |==> false
+876:COR:actualId.equals(expected.getControlNumber()):FALSE:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:69:actualId.equals(expected.getControlNumber()) |==> true
+877:LVR:0:POS:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:75:0 |==> 1
+878:LVR:0:NEG:org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:75:0 |==> -1
+879:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:76:i < Math.min(expectedLines.length, actualLines.length) |==> i != Math.min(expectedLines.length, actualLines.length)
+880:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:76:i < Math.min(expectedLines.length, actualLines.length) |==> i <= Math.min(expectedLines.length, actualLines.length)
+881:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:76:i < Math.min(expectedLines.length, actualLines.length) |==> false
+882:ROR:>=(int,int):==(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length |==> i == expectedLines.length
+883:ROR:>=(int,int):>(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length |==> i > expectedLines.length
+884:ROR:>=(int,int):TRUE(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length |==> true
+885:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i < actualLines.length |==> i != actualLines.length
+886:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i < actualLines.length |==> i <= actualLines.length
+887:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i < actualLines.length |==> false
+888:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length && i < actualLines.length |==> i >= expectedLines.length == i < actualLines.length
+889:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length && i < actualLines.length |==> false
+890:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length && i < actualLines.length |==> i >= expectedLines.length
+891:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:83:i >= expectedLines.length && i < actualLines.length |==> i < actualLines.length
+892:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length |==> i != expectedLines.length
+893:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length |==> i <= expectedLines.length
+894:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length |==> false
+895:ROR:>=(int,int):==(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i >= actualLines.length |==> i == actualLines.length
+896:ROR:>=(int,int):>(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i >= actualLines.length |==> i > actualLines.length
+897:ROR:>=(int,int):TRUE(int,int):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i >= actualLines.length |==> true
+898:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length && i >= actualLines.length |==> i < expectedLines.length == i >= actualLines.length
+899:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length && i >= actualLines.length |==> false
+900:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length && i >= actualLines.length |==> i < expectedLines.length
+901:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getFirstRecordDifferenceIgnoreLeader:87:i < expectedLines.length && i >= actualLines.length |==> i >= actualLines.length
+902:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertNotEqualIgnoreLeader:105:24 |==> 0
+903:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertNotEqualIgnoreLeader:105:24 |==> -24
+904:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertNotEqualIgnoreLeader:105:24 |==> 0
+905:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertNotEqualIgnoreLeader:105:24 |==> -24
+906:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertNotEqualIgnoreLeader:105:assertFalse("Records unexpectedly the same: " + actualId, expected.toString().substring(24).equals(actual.toString().substring(24))) |==> <NO-OP>
+907:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:119:32 |==> 0
+908:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:119:32 |==> -32
+909:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:122:1 |==> 0
+910:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:122:1 |==> -1
+911:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:122:i < expected.length |==> i != expected.length
+912:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:122:i < expected.length |==> i <= expected.length
+913:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:122:i < expected.length |==> false
+914:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:123:buf.append(expected[i] + "\n") |==> <NO-OP>
+915:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertEqualsIgnoreLeader:126:org.junit.Assert.assertEquals("Records weren\'t equal", buf.toString(), actualAsStrWithoutLdr) |==> <NO-OP>
+916:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:144:e.printStackTrace() |==> <NO-OP>
+917:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:145:fail("couldn\'t read record to be tested from InputStream") |==> <NO-OP>
+918:LVR:0:POS:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:152:0 |==> 1
+919:LVR:0:NEG:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:152:0 |==> -1
+920:LVR:0:POS:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:156:0 |==> 1
+921:LVR:0:NEG:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:156:0 |==> -1
+922:ROR:==(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:156:actualLine.length() == 0 |==> actualLine.length() <= 0
+923:ROR:==(int,int):>=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:156:actualLine.length() == 0 |==> actualLine.length() >= 0
+924:ROR:==(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:156:actualLine.length() == 0 |==> false
+925:LVR:0:POS:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:0 |==> 1
+926:LVR:0:NEG:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:0 |==> -1
+927:ROR:>(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 |==> numExpectedLines != 0
+928:ROR:>(int,int):>=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 |==> numExpectedLines >= 0
+929:ROR:>(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 |==> false
+930:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:lineCnt < numExpectedLines |==> lineCnt != numExpectedLines
+931:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:lineCnt < numExpectedLines |==> lineCnt <= numExpectedLines
+932:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:lineCnt < numExpectedLines |==> false
+933:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 && lineCnt < numExpectedLines |==> numExpectedLines > 0 == lineCnt < numExpectedLines
+934:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 && lineCnt < numExpectedLines |==> false
+935:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 && lineCnt < numExpectedLines |==> numExpectedLines > 0
+936:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:160:numExpectedLines > 0 && lineCnt < numExpectedLines |==> lineCnt < numExpectedLines
+937:COR:||(boolean,boolean):!=(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") |==> actualLine.equals("Flushing results...") != actualLine.equals("Flushing results done")
+938:COR:||(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") |==> actualLine.equals("Flushing results...")
+939:COR:||(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") |==> actualLine.equals("Flushing results done")
+940:COR:||(boolean,boolean):TRUE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") |==> true
+941:COR:||(boolean,boolean):!=(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") || actualLine.startsWith("Cobertura:") |==> (actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done")) != actualLine.startsWith("Cobertura:")
+942:COR:||(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") || actualLine.startsWith("Cobertura:") |==> actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done")
+943:COR:||(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") || actualLine.startsWith("Cobertura:") |==> actualLine.startsWith("Cobertura:")
+944:COR:||(boolean,boolean):TRUE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:162:actualLine.equals("Flushing results...") || actualLine.equals("Flushing results done") || actualLine.startsWith("Cobertura:") |==> true
+945:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:166:org.junit.Assert.assertEquals("output line [" + actualLine + "]  doesn\'t match expected [" + expectedLine + "]", expectedLine, actualLine) |==> <NO-OP>
+946:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:168:lineCnt++ |==> <NO-OP>
+947:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:173:e.printStackTrace() |==> <NO-OP>
+948:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertMarcRecsEqual:174:fail("couldn\'t compare records") |==> <NO-OP>
+949:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertSubfieldHasExpectedValues:193:resultSet.add(val) |==> <NO-OP>
+950:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertSubfieldHasExpectedValues:194:assertTrue("Got unexpected value " + val, expectedVals.contains(val)) |==> <NO-OP>
+951:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.RecordTestingUtils@assertSubfieldHasExpectedValues:197:org.junit.Assert.assertEquals("Number of values doesn\'t match", expectedVals.size(), resultSet.size()) |==> <NO-OP>
+952:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld != null |==> true
+953:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld.getData() != null |==> true
+954:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld != null && fld.getData() != null |==> fld != null == (fld.getData() != null)
+955:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld != null && fld.getData() != null |==> false
+956:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld != null && fld.getData() != null |==> fld != null
+957:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:209:fld != null && fld.getData() != null |==> fld.getData() != null
+958:COR:||(boolean,boolean):!=(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:213:rawVal.startsWith("a") || rawVal.startsWith("u") |==> rawVal.startsWith("a") != rawVal.startsWith("u")
+959:COR:||(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:213:rawVal.startsWith("a") || rawVal.startsWith("u") |==> rawVal.startsWith("a")
+960:COR:||(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:213:rawVal.startsWith("a") || rawVal.startsWith("u") |==> rawVal.startsWith("u")
+961:COR:||(boolean,boolean):TRUE(boolean,boolean):org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:213:rawVal.startsWith("a") || rawVal.startsWith("u") |==> true
+962:LVR:POS:0:org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:214:1 |==> 0
+963:LVR:POS:NEG:org.marc4j.test.utils.RecordTestingUtils@getRecordIdFrom001:214:1 |==> -1
+964:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:36:2 |==> 0
+965:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:36:2 |==> -2
+966:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:37:1 |==> 0
+967:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:37:1 |==> -1
+968:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:42:0 |==> 1
+969:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:42:0 |==> -1
+970:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:43:0 |==> 1
+971:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:43:0 |==> -1
+972:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:43:chabon[0].addVariableField(factory.newControlField("001", "11939876")) |==> <NO-OP>
+973:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:44:0 |==> 1
+974:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:44:0 |==> -1
+975:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:44:chabon[0].addVariableField(factory.newControlField("005", "20041229190604.0")) |==> <NO-OP>
+976:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:45:0 |==> 1
+977:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:45:0 |==> -1
+978:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:45:chabon[0].addVariableField(factory.newControlField("008", "000313s2000    nyu           000 1 eng  ")) |==> <NO-OP>
+979:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:46:0 |==> 1
+980:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:46:0 |==> -1
+981:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:46:chabon[0].addVariableField(factory.newDataField("020", ' ', ' ', "a", "0679450041 (acid-free paper)")) |==> <NO-OP>
+982:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:47:0 |==> 1
+983:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:47:0 |==> -1
+984:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:47:chabon[0].addVariableField(factory.newDataField("040", ' ', ' ', "a", "DLC", "c", "DLC", "d", "DLC")) |==> <NO-OP>
+985:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:48:0 |==> 1
+986:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:48:0 |==> -1
+987:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:48:chabon[0].addVariableField(factory.newDataField("100", '1', ' ', "a", "Chabon, Michael.")) |==> <NO-OP>
+988:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:49:0 |==> 1
+989:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:49:0 |==> -1
+990:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:49:chabon[0].addVariableField(factory.newDataField("245", '1', '4', "a", "The amazing adventures of Kavalier and Clay :", "b", "a novel /", "c", "Michael Chabon.")) |==> <NO-OP>
+991:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:50:0 |==> 1
+992:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:50:0 |==> -1
+993:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:50:chabon[0].addVariableField(factory.newDataField("260", ' ', ' ', "a", "New York :", "b", "Random House,", "c", "c2000.")) |==> <NO-OP>
+994:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:51:0 |==> 1
+995:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:51:0 |==> -1
+996:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:51:chabon[0].addVariableField(factory.newDataField("300", ' ', ' ', "a", "639 p. ;", "c", "25 cm.")) |==> <NO-OP>
+997:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:52:0 |==> 1
+998:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:52:0 |==> -1
+999:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:52:chabon[0].addVariableField(factory.newDataField("650", ' ', '0', "a", "Comic books, strips, etc.", "x", "Authorship", "v", "Fiction.")) |==> <NO-OP>
+1000:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:53:0 |==> 1
+1001:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:53:0 |==> -1
+1002:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:53:chabon[0].addVariableField(factory.newDataField("650", ' ', '0', "a", "Heroes in mass media", "v", "Fiction.")) |==> <NO-OP>
+1003:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:54:0 |==> 1
+1004:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:54:0 |==> -1
+1005:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:54:chabon[0].addVariableField(factory.newDataField("650", ' ', '0', "a", "Czech Americans", "v", "Fiction.")) |==> <NO-OP>
+1006:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:55:0 |==> 1
+1007:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:55:0 |==> -1
+1008:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:55:chabon[0].addVariableField(factory.newDataField("651", ' ', '0', "a", "New York (N.Y.)", "v", "Fiction.")) |==> <NO-OP>
+1009:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:56:0 |==> 1
+1010:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:56:0 |==> -1
+1011:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:56:chabon[0].addVariableField(factory.newDataField("650", ' ', '0', "a", "Young men", "v", "Fiction.")) |==> <NO-OP>
+1012:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:57:0 |==> 1
+1013:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:57:0 |==> -1
+1014:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:57:chabon[0].addVariableField(factory.newDataField("650", ' ', '0', "a", "Cartoonists", "v", "Fiction.")) |==> <NO-OP>
+1015:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:58:0 |==> 1
+1016:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:58:0 |==> -1
+1017:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:58:chabon[0].addVariableField(factory.newDataField("655", ' ', '7', "a", "Humorous stories.", "2", "gsafd")) |==> <NO-OP>
+1018:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:59:0 |==> 1
+1019:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:59:0 |==> -1
+1020:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:59:chabon[0].addVariableField(factory.newDataField("655", ' ', '7', "a", "Bildungsromane.", "2", "gsafd")) |==> <NO-OP>
+1021:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:61:1 |==> 0
+1022:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:61:1 |==> -1
+1023:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:62:1 |==> 0
+1024:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:62:1 |==> -1
+1025:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:62:chabon[1].addVariableField(factory.newControlField("001", "12883376")) |==> <NO-OP>
+1026:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:63:1 |==> 0
+1027:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:63:1 |==> -1
+1028:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:63:chabon[1].addVariableField(factory.newControlField("005", "20030616111422.0")) |==> <NO-OP>
+1029:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:64:1 |==> 0
+1030:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:64:1 |==> -1
+1031:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:64:chabon[1].addVariableField(factory.newControlField("008", "020805s2002    nyu    j      000 1 eng  ")) |==> <NO-OP>
+1032:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:65:1 |==> 0
+1033:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:65:1 |==> -1
+1034:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:65:chabon[1].addVariableField(factory.newDataField("020", ' ', ' ', "a", "0786808772")) |==> <NO-OP>
+1035:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:66:1 |==> 0
+1036:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:66:1 |==> -1
+1037:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:66:chabon[1].addVariableField(factory.newDataField("020", ' ', ' ', "a", "0786816155 (pbk.)")) |==> <NO-OP>
+1038:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:67:1 |==> 0
+1039:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:67:1 |==> -1
+1040:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:67:chabon[1].addVariableField(factory.newDataField("040", ' ', ' ', "a", "DLC", "c", "DLC", "d", "DLC")) |==> <NO-OP>
+1041:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:68:1 |==> 0
+1042:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:68:1 |==> -1
+1043:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:68:chabon[1].addVariableField(factory.newDataField("100", '1', ' ', "a", "Chabon, Michael.")) |==> <NO-OP>
+1044:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:69:1 |==> 0
+1045:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:69:1 |==> -1
+1046:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:69:chabon[1].addVariableField(factory.newDataField("245", '1', '0', "a", "Summerland /", "c", "Michael Chabon.")) |==> <NO-OP>
+1047:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:70:1 |==> 0
+1048:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:70:1 |==> -1
+1049:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:70:chabon[1].addVariableField(factory.newDataField("250", ' ', ' ', "a", "1st ed.")) |==> <NO-OP>
+1050:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:71:1 |==> 0
+1051:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:71:1 |==> -1
+1052:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:71:chabon[1].addVariableField(factory.newDataField("260", ' ', ' ', "a", "New York :", "b", "Miramax Books/Hyperion Books for Children,", "c", "c2002.")) |==> <NO-OP>
+1053:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:72:1 |==> 0
+1054:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:72:1 |==> -1
+1055:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:72:chabon[1].addVariableField(factory.newDataField("300", ' ', ' ', "a", "500 p. ;", "c", "22 cm.")) |==> <NO-OP>
+1056:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:73:1 |==> 0
+1057:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:73:1 |==> -1
+1058:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:73:chabon[1].addVariableField(factory.newDataField("520", ' ', ' ', "a", "Ethan Feld, the worst baseball player in the history of the game, finds himself recruited by a 100-year-old scout to help a band of fairies triumph over an ancient enemy.")) |==> <NO-OP>
+1059:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:74:1 |==> 0
+1060:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:74:1 |==> -1
+1061:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:74:chabon[1].addVariableField(factory.newDataField("650", ' ', '1', "a", "Fantasy.")) |==> <NO-OP>
+1062:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:75:1 |==> 0
+1063:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:75:1 |==> -1
+1064:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:75:chabon[1].addVariableField(factory.newDataField("650", ' ', '1', "a", "Baseball", "v", "Fiction.")) |==> <NO-OP>
+1065:LVR:POS:0:org.marc4j.test.utils.StaticTestRecords:76:1 |==> 0
+1066:LVR:POS:NEG:org.marc4j.test.utils.StaticTestRecords:76:1 |==> -1
+1067:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords:76:chabon[1].addVariableField(factory.newDataField("650", ' ', '1', "a", "Magic", "v", "Fiction.")) |==> <NO-OP>
+1068:LVR:0:POS:org.marc4j.test.utils.StaticTestRecords:78:0 |==> 1
+1069:LVR:0:NEG:org.marc4j.test.utils.StaticTestRecords:78:0 |==> -1
+1070:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:83:sumland.addVariableField(factory.newControlField("001", "12883376")) |==> <NO-OP>
+1071:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:84:sumland.addVariableField(factory.newControlField("005", "20030616111422.0")) |==> <NO-OP>
+1072:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:85:sumland.addVariableField(factory.newControlField("008", "020805s2002    nyu    j      000 1 eng  ")) |==> <NO-OP>
+1073:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:86:sumland.addVariableField(factory.newDataField("020", ' ', ' ', "a", "0786808772")) |==> <NO-OP>
+1074:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:87:sumland.addVariableField(factory.newDataField("020", ' ', ' ', "a", "0786816155 (pbk.)")) |==> <NO-OP>
+1075:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:88:sumland.addVariableField(factory.newDataField("040", ' ', ' ', "a", "DLC", "c", "DLC", "d", "DLC")) |==> <NO-OP>
+1076:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:89:sumland.addVariableField(factory.newDataField("100", '1', ' ', "a", "Chabon, Michael.")) |==> <NO-OP>
+1077:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:90:sumland.addVariableField(factory.newDataField("245", '1', '0', "a", "Summerland /", "c", "Michael Chabon.")) |==> <NO-OP>
+1078:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:91:sumland.addVariableField(factory.newDataField("250", ' ', ' ', "a", "1st ed.")) |==> <NO-OP>
+1079:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:92:sumland.addVariableField(factory.newDataField("260", ' ', ' ', "a", "New York :", "b", "Miramax Books/Hyperion Books for Children,", "c", "c2002.")) |==> <NO-OP>
+1080:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:93:sumland.addVariableField(factory.newDataField("300", ' ', ' ', "a", "500 p. ;", "c", "22 cm.")) |==> <NO-OP>
+1081:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:94:sumland.addVariableField(factory.newDataField("520", ' ', ' ', "a", "Ethan Feld, the worst baseball player in the history of the game, finds himself recruited by a 100-year-old scout to help a band of fairies triumph over an ancient enemy.")) |==> <NO-OP>
+1082:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:95:sumland.addVariableField(factory.newDataField("650", ' ', '1', "a", "Fantasy.")) |==> <NO-OP>
+1083:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:96:sumland.addVariableField(factory.newDataField("650", ' ', '1', "a", "Baseball", "v", "Fiction.")) |==> <NO-OP>
+1084:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.StaticTestRecords@makeSummerlandRecord:97:sumland.addVariableField(factory.newDataField("650", ' ', '1', "a", "Magic", "v", "Fiction.")) |==> <NO-OP>
+1085:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:18:assertEquals("leader", "00759cam a2200229 a 4500", record.getLeader().marshal()) |==> <NO-OP>
+1086:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:20:assertControlFieldInRecordEquals("001", "11939876", it.next()) |==> <NO-OP>
+1087:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:21:assertControlFieldInRecordEquals("005", "20041229190604.0", it.next()) |==> <NO-OP>
+1088:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:22:assertControlFieldInRecordEquals("008", "000313s2000    nyu           000 1 eng  ", it.next()) |==> <NO-OP>
+1089:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:23:assertDataFieldEquals(it.next(), "020", ' ', ' ', "a", "0679450041 (acid-free paper)") |==> <NO-OP>
+1090:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:24:assertDataFieldEquals(it.next(), "040", ' ', ' ', "a", "DLC", "c", "DLC", "d", "DLC") |==> <NO-OP>
+1091:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:25:assertDataFieldEquals(it.next(), "100", '1', ' ', "a", "Chabon, Michael.") |==> <NO-OP>
+1092:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:26:assertDataFieldEquals(it.next(), "245", '1', '4', "a", "The amazing adventures of Kavalier and Clay :", "b", "a novel /", "c", "Michael Chabon.") |==> <NO-OP>
+1093:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:27:assertDataFieldEquals(it.next(), "260", ' ', ' ', "a", "New York :", "b", "Random House,", "c", "c2000.") |==> <NO-OP>
+1094:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:28:assertDataFieldEquals(it.next(), "300", ' ', ' ', "a", "639 p. ;", "c", "25 cm.") |==> <NO-OP>
+1095:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:29:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Comic books, strips, etc.", "x", "Authorship", "v", "Fiction.") |==> <NO-OP>
+1096:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:30:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Heroes in mass media", "v", "Fiction.") |==> <NO-OP>
+1097:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:31:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Czech Americans", "v", "Fiction.") |==> <NO-OP>
+1098:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:32:assertDataFieldEquals(it.next(), "651", ' ', '0', "a", "New York (N.Y.)", "v", "Fiction.") |==> <NO-OP>
+1099:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:33:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Young men", "v", "Fiction.") |==> <NO-OP>
+1100:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:34:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Cartoonists", "v", "Fiction.") |==> <NO-OP>
+1101:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:35:assertDataFieldEquals(it.next(), "655", ' ', '7', "a", "Humorous stories.", "2", "gsafd") |==> <NO-OP>
+1102:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:36:assertDataFieldEquals(it.next(), "655", ' ', '7', "a", "Bildungsromane.", "2", "gsafd") |==> <NO-OP>
+1103:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateKavalieAndClayRecord:37:assertFalse("too many fields", it.hasNext()) |==> <NO-OP>
+1104:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:42:assertEquals("leader", "00714cam a2200205 a 4500", record.getLeader().marshal()) |==> <NO-OP>
+1105:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:44:assertControlFieldInRecordEquals("001", "12883376", it.next()) |==> <NO-OP>
+1106:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:45:assertControlFieldInRecordEquals("005", "20030616111422.0", it.next()) |==> <NO-OP>
+1107:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:46:assertControlFieldInRecordEquals("008", "020805s2002    nyu    j      000 1 eng  ", it.next()) |==> <NO-OP>
+1108:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:47:assertDataFieldEquals(it.next(), "020", ' ', ' ', "a", "0786808772") |==> <NO-OP>
+1109:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:48:assertDataFieldEquals(it.next(), "020", ' ', ' ', "a", "0786816155 (pbk.)") |==> <NO-OP>
+1110:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:49:assertDataFieldEquals(it.next(), "040", ' ', ' ', "a", "DLC", "c", "DLC", "d", "DLC") |==> <NO-OP>
+1111:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:50:assertDataFieldEquals(it.next(), "100", '1', ' ', "a", "Chabon, Michael.") |==> <NO-OP>
+1112:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:51:assertDataFieldEquals(it.next(), "245", '1', '0', "a", "Summerland /", "c", "Michael Chabon.") |==> <NO-OP>
+1113:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:52:assertDataFieldEquals(it.next(), "250", ' ', ' ', "a", "1st ed.") |==> <NO-OP>
+1114:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:53:assertDataFieldEquals(it.next(), "260", ' ', ' ', "a", "New York :", "b", "Miramax Books/Hyperion Books for Children,", "c", "c2002.") |==> <NO-OP>
+1115:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:54:assertDataFieldEquals(it.next(), "300", ' ', ' ', "a", "500 p. ;", "c", "22 cm.") |==> <NO-OP>
+1116:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:55:assertDataFieldEquals(it.next(), "520", ' ', ' ', "a", "Ethan Feld, the worst baseball player in the history of the game, finds himself recruited by a 100-year-old scout to help a band of fairies triumph over an ancient enemy.") |==> <NO-OP>
+1117:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:56:assertDataFieldEquals(it.next(), "650", ' ', '1', "a", "Fantasy.") |==> <NO-OP>
+1118:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:57:assertDataFieldEquals(it.next(), "650", ' ', '1', "a", "Baseball", "v", "Fiction.") |==> <NO-OP>
+1119:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:58:assertDataFieldEquals(it.next(), "650", ' ', '1', "a", "Magic", "v", "Fiction.") |==> <NO-OP>
+1120:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateSummerlandRecord:59:assertFalse("too many fields", it.hasNext()) |==> <NO-OP>
+1121:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:63:assertEquals("leader", "01471cjm a2200349 a 4500", record.getLeader().marshal()) |==> <NO-OP>
+1122:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:65:assertControlFieldInRecordEquals("001", "5674874", it.next()) |==> <NO-OP>
+1123:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:66:assertControlFieldInRecordEquals("005", "20030305110405.0", it.next()) |==> <NO-OP>
+1124:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:67:assertControlFieldInRecordEquals("007", "sdubsmennmplu", it.next()) |==> <NO-OP>
+1125:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:68:assertControlFieldInRecordEquals("008", "930331s1963    nyuppn              eng d", it.next()) |==> <NO-OP>
+1126:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:69:assertDataFieldEquals(it.next(), "035", ' ', ' ', "9", "(DLC)   93707283") |==> <NO-OP>
+1127:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:70:assertDataFieldEquals(it.next(), "906", ' ', ' ', "a", "7", "b", "cbc", "c", "copycat", "d", "4", "e", "ncip", "f", "19", "g", "y-soundrec") |==> <NO-OP>
+1128:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:71:assertDataFieldEquals(it.next(), "010", ' ', ' ', "a", "   93707283 ") |==> <NO-OP>
+1129:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:72:assertDataFieldEquals(it.next(), "028", '0', '2', "a", "CS 8786", "b", "Columbia") |==> <NO-OP>
+1130:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:73:assertDataFieldEquals(it.next(), "035", ' ', ' ', "a", "(OCoLC)13083787") |==> <NO-OP>
+1131:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:74:assertDataFieldEquals(it.next(), "040", ' ', ' ', "a", "OClU", "c", "DLC", "d", "DLC") |==> <NO-OP>
+1132:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:75:assertDataFieldEquals(it.next(), "041", '0', ' ', "d", "eng", "g", "eng") |==> <NO-OP>
+1133:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:76:assertDataFieldEquals(it.next(), "042", ' ', ' ', "a", "lccopycat") |==> <NO-OP>
+1134:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:77:assertDataFieldEquals(it.next(), "050", '0', '0', "a", "Columbia CS 8786") |==> <NO-OP>
+1135:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:78:assertDataFieldEquals(it.next(), "100", '1', ' ', "a", "Dylan, Bob,", "d", "1941-") |==> <NO-OP>
+1136:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:79:assertDataFieldEquals(it.next(), "245", '1', '4', "a", "The freewheelin\' Bob Dylan", "h", "[sound recording].") |==> <NO-OP>
+1137:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:80:assertDataFieldEquals(it.next(), "260", ' ', ' ', "a", "[New York, N.Y.] :", "b", "Columbia,", "c", "[1963]") |==> <NO-OP>
+1138:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:81:assertDataFieldEquals(it.next(), "300", ' ', ' ', "a", "1 sound disc :", "b", "analog, 33 1/3 rpm, stereo. ;", "c", "12 in.") |==> <NO-OP>
+1139:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:82:assertDataFieldEquals(it.next(), "500", ' ', ' ', "a", "Songs.") |==> <NO-OP>
+1140:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:83:assertDataFieldEquals(it.next(), "511", '0', ' ', "a", "The composer accompanying himself on the guitar ; in part with instrumental ensemble.") |==> <NO-OP>
+1141:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:84:assertDataFieldEquals(it.next(), "500", ' ', ' ', "a", "Program notes by Nat Hentoff on container.") |==> <NO-OP>
+1142:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:85:assertDataFieldEquals(it.next(), "505", '0', ' ', "a", "Blowin\' in the wind -- Girl from the north country -- Masters of war -- Down the highway -- Bob Dylan\'s blues -- A hard rain\'s a-gonna fall -- Don\'t think twice, it\'s all right -- Bob Dylan\'s dream -- Oxford town -- Talking World War III blues -- Corrina, Corrina -- Honey, just allow me one more chance -- I shall be free.") |==> <NO-OP>
+1143:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:86:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Popular music", "y", "1961-1970.") |==> <NO-OP>
+1144:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:87:assertDataFieldEquals(it.next(), "650", ' ', '0', "a", "Blues (Music)", "y", "1961-1970.") |==> <NO-OP>
+1145:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:88:assertDataFieldEquals(it.next(), "856", '4', '1', "3", "Preservation copy (limited access)", "u", "http://hdl.loc.gov/loc.mbrsrs/lp0001.dyln") |==> <NO-OP>
+1146:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:89:assertDataFieldEquals(it.next(), "952", ' ', ' ', "a", "New") |==> <NO-OP>
+1147:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:90:assertDataFieldEquals(it.next(), "953", ' ', ' ', "a", "TA28") |==> <NO-OP>
+1148:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:91:assertDataFieldEquals(it.next(), "991", ' ', ' ', "b", "c-RecSound", "h", "Columbia CS 8786", "w", "MUSIC") |==> <NO-OP>
+1149:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateFreewheelingBobDylanRecord:92:assertFalse("too many fields", it.hasNext()) |==> <NO-OP>
+1150:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertControlFieldInRecordEquals:98:assertEquals("Control field mismatch for tag " + tag, expected, tmp.getData()) |==> <NO-OP>
+1151:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:103:assertEquals("tag", tag, field.getTag()) |==> <NO-OP>
+1152:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:104:assertEquals("Indicator 1", ind1, field.getIndicator1()) |==> <NO-OP>
+1153:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:105:assertEquals("Indicator 2", ind2, field.getIndicator2()) |==> <NO-OP>
+1154:LVR:0:POS:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:108:0 |==> 1
+1155:LVR:0:NEG:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:108:0 |==> -1
+1156:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@assertDataFieldEquals:108:i < subfieldsAndValues.length |==> i != subfieldsAndValues.length
+1157:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@assertDataFieldEquals:108:i < subfieldsAndValues.length |==> i <= subfieldsAndValues.length
+1158:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@assertDataFieldEquals:108:i < subfieldsAndValues.length |==> false
+1159:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:112:fail("not enough subfields - expecting $" + expectedCode + " = " + expectedValue) |==> <NO-OP>
+1160:LVR:0:POS:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:116:0 |==> 1
+1161:LVR:0:NEG:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:116:0 |==> -1
+1162:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:116:assertEquals("subfieldCode", sf.getCode(), expectedCode.charAt(0)) |==> <NO-OP>
+1163:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:117:assertEquals("subfield value (" + tag + " $" + expectedCode + ") ", expectedValue, sf.getData()) |==> <NO-OP>
+1164:COR:it.hasNext():TRUE:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:119:it.hasNext() |==> false
+1165:COR:it.hasNext():FALSE:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:119:it.hasNext() |==> true
+1166:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@assertDataFieldEquals:120:fail("Too many subfields for " + tag + " - first unexpected is " + it.next()) |==> <NO-OP>
+1167:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:126:assertNotNull("Could\'t open " + fileName, stream) |==> <NO-OP>
+1168:LVR:POS:0:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:130:8192 |==> 0
+1169:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:130:8192 |==> -8192
+1170:LVR:0:POS:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:131:0 |==> 1
+1171:LVR:0:NEG:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:131:0 |==> -1
+1172:ROR:>=(int,int):==(int,int):org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:131:(n = in.read(expected)) >= 0 |==> (n = in.read(expected)) == 0
+1173:ROR:>=(int,int):>(int,int):org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:131:(n = in.read(expected)) >= 0 |==> (n = in.read(expected)) > 0
+1174:LVR:0:POS:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:132:0 |==> 1
+1175:LVR:0:NEG:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:132:0 |==> -1
+1176:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:132:os.write(expected, 0, n) |==> <NO-OP>
+1177:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:134:os.flush() |==> <NO-OP>
+1178:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:137:comparison != null |==> true
+1179:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateBytesAgainstFile:138:fail("actual differs from expected as shown below:" + System.getProperty("line.separator") + comparison) |==> <NO-OP>
+1180:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:146:assertNotNull(fileName, stream) |==> <NO-OP>
+1181:LVR:POS:0:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:150:8192 |==> 0
+1182:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:150:8192 |==> -8192
+1183:LVR:0:POS:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:151:0 |==> 1
+1184:LVR:0:NEG:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:151:0 |==> -1
+1185:ROR:>=(int,int):==(int,int):org.marc4j.test.utils.TestUtils@validateStringAgainstFile:151:(n = in.read(buf)) >= 0 |==> (n = in.read(buf)) == 0
+1186:ROR:>=(int,int):>(int,int):org.marc4j.test.utils.TestUtils@validateStringAgainstFile:151:(n = in.read(buf)) >= 0 |==> (n = in.read(buf)) > 0
+1187:LVR:0:POS:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:152:0 |==> 1
+1188:LVR:0:NEG:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:152:0 |==> -1
+1189:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:152:os.write(buf, 0, n) |==> <NO-OP>
+1190:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:154:os.flush() |==> <NO-OP>
+1191:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.marc4j.test.utils.TestUtils@validateStringAgainstFile:157:comparison != null |==> true
+1192:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@validateStringAgainstFile:158:fail("actual differs from expected as shown below:" + System.getProperty("line.separator") + comparison) |==> <NO-OP>
+1193:LVR:TRUE:FALSE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:166:true |==> false
+1194:LVR:0:POS:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:167:0 |==> 1
+1195:LVR:0:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:167:0 |==> -1
+1196:LVR:0:POS:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:167:0 |==> 1
+1197:LVR:0:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:167:0 |==> -1
+1198:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length |==> expectedIndex != expectedLines.length
+1199:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length |==> expectedIndex <= expectedLines.length
+1200:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length |==> false
+1201:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:actualIndex < actualLines.length |==> actualIndex != actualLines.length
+1202:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:actualIndex < actualLines.length |==> actualIndex <= actualLines.length
+1203:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:actualIndex < actualLines.length |==> false
+1204:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length && actualIndex < actualLines.length |==> expectedIndex < expectedLines.length == actualIndex < actualLines.length
+1205:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length && actualIndex < actualLines.length |==> false
+1206:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length && actualIndex < actualLines.length |==> expectedIndex < expectedLines.length
+1207:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:169:expectedIndex < expectedLines.length && actualIndex < actualLines.length |==> actualIndex < actualLines.length
+1208:COR:expectedLines[expectedIndex].equals(actualLines[actualIndex]):TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:170:expectedLines[expectedIndex].equals(actualLines[actualIndex]) |==> false
+1209:COR:expectedLines[expectedIndex].equals(actualLines[actualIndex]):FALSE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:170:expectedLines[expectedIndex].equals(actualLines[actualIndex]) |==> true
+1210:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:171:sb.append("  " + expectedLines[expectedIndex]).append(separator) |==> <NO-OP>
+1211:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:172:expectedIndex++ |==> <NO-OP>
+1212:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:173:actualIndex++ |==> <NO-OP>
+1213:LVR:POS:0:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:1 |==> 0
+1214:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:1 |==> -1
+1215:AOR:+(int,int):%(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex % 1
+1216:AOR:+(int,int):*(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex * 1
+1217:AOR:+(int,int):-(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex - 1
+1218:AOR:+(int,int):/(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex / 1
+1219:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length |==> actualIndex + 1 != actualLines.length
+1220:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length |==> actualIndex + 1 <= actualLines.length
+1221:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length |==> false
+1222:LVR:POS:0:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:1 |==> 0
+1223:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:1 |==> -1
+1224:AOR:+(int,int):%(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex % 1
+1225:AOR:+(int,int):*(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex * 1
+1226:AOR:+(int,int):-(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex - 1
+1227:AOR:+(int,int):/(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 |==> actualIndex / 1
+1228:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length && expectedLines[expectedIndex].equals(actualLines[actualIndex + 1]) |==> actualIndex + 1 < actualLines.length == expectedLines[expectedIndex].equals(actualLines[actualIndex + 1])
+1229:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length && expectedLines[expectedIndex].equals(actualLines[actualIndex + 1]) |==> false
+1230:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length && expectedLines[expectedIndex].equals(actualLines[actualIndex + 1]) |==> actualIndex + 1 < actualLines.length
+1231:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:174:actualIndex + 1 < actualLines.length && expectedLines[expectedIndex].equals(actualLines[actualIndex + 1]) |==> expectedLines[expectedIndex].equals(actualLines[actualIndex + 1])
+1232:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:175:sb.append("+ " + actualLines[actualIndex]).append(separator) |==> <NO-OP>
+1233:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:176:actualIndex++ |==> <NO-OP>
+1234:LVR:FALSE:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:177:false |==> true
+1235:LVR:POS:0:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:1 |==> 0
+1236:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:1 |==> -1
+1237:AOR:+(int,int):%(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex % 1
+1238:AOR:+(int,int):*(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex * 1
+1239:AOR:+(int,int):-(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex - 1
+1240:AOR:+(int,int):/(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex / 1
+1241:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length |==> expectedIndex + 1 != expectedLines.length
+1242:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length |==> expectedIndex + 1 <= expectedLines.length
+1243:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length |==> false
+1244:LVR:POS:0:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:1 |==> 0
+1245:LVR:POS:NEG:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:1 |==> -1
+1246:AOR:+(int,int):%(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex % 1
+1247:AOR:+(int,int):*(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex * 1
+1248:AOR:+(int,int):-(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex - 1
+1249:AOR:+(int,int):/(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 |==> expectedIndex / 1
+1250:COR:&&(boolean,boolean):==(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length && expectedLines[expectedIndex + 1].equals(actualLines[actualIndex]) |==> expectedIndex + 1 < expectedLines.length == expectedLines[expectedIndex + 1].equals(actualLines[actualIndex])
+1251:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length && expectedLines[expectedIndex + 1].equals(actualLines[actualIndex]) |==> false
+1252:COR:&&(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length && expectedLines[expectedIndex + 1].equals(actualLines[actualIndex]) |==> expectedIndex + 1 < expectedLines.length
+1253:COR:&&(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:178:expectedIndex + 1 < expectedLines.length && expectedLines[expectedIndex + 1].equals(actualLines[actualIndex]) |==> expectedLines[expectedIndex + 1].equals(actualLines[actualIndex])
+1254:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:179:sb.append("- " + expectedLines[expectedIndex]).append(separator) |==> <NO-OP>
+1255:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:180:expectedIndex++ |==> <NO-OP>
+1256:LVR:FALSE:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:181:false |==> true
+1257:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:183:sb.append("+ " + actualLines[actualIndex]).append(separator) |==> <NO-OP>
+1258:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:184:actualIndex++ |==> <NO-OP>
+1259:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:185:sb.append("- " + expectedLines[expectedIndex]).append(separator) |==> <NO-OP>
+1260:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:186:expectedIndex++ |==> <NO-OP>
+1261:LVR:FALSE:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:187:false |==> true
+1262:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length |==> expectedIndex != expectedLines.length
+1263:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length |==> expectedIndex <= expectedLines.length
+1264:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length |==> false
+1265:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:actualIndex < actualLines.length |==> actualIndex != actualLines.length
+1266:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:actualIndex < actualLines.length |==> actualIndex <= actualLines.length
+1267:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:actualIndex < actualLines.length |==> false
+1268:COR:||(boolean,boolean):!=(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length || actualIndex < actualLines.length |==> expectedIndex < expectedLines.length != actualIndex < actualLines.length
+1269:COR:||(boolean,boolean):LHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length || actualIndex < actualLines.length |==> expectedIndex < expectedLines.length
+1270:COR:||(boolean,boolean):RHS(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length || actualIndex < actualLines.length |==> actualIndex < actualLines.length
+1271:COR:||(boolean,boolean):TRUE(boolean,boolean):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:190:expectedIndex < expectedLines.length || actualIndex < actualLines.length |==> true
+1272:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:191:actualIndex < actualLines.length |==> actualIndex != actualLines.length
+1273:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:191:actualIndex < actualLines.length |==> actualIndex <= actualLines.length
+1274:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:191:actualIndex < actualLines.length |==> false
+1275:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:192:sb.append("+ " + actualLines[actualIndex]).append(separator) |==> <NO-OP>
+1276:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:193:actualIndex++ |==> <NO-OP>
+1277:LVR:FALSE:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:194:false |==> true
+1278:ROR:<(int,int):!=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:195:expectedIndex < expectedLines.length |==> expectedIndex != expectedLines.length
+1279:ROR:<(int,int):<=(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:195:expectedIndex < expectedLines.length |==> expectedIndex <= expectedLines.length
+1280:ROR:<(int,int):FALSE(int,int):org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:195:expectedIndex < expectedLines.length |==> false
+1281:STD:<CALL>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:196:sb.append("- " + expectedLines[expectedIndex]).append(separator) |==> <NO-OP>
+1282:STD:<INC/DEC>:<NO-OP>:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:197:expectedIndex++ |==> <NO-OP>
+1283:LVR:FALSE:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:198:false |==> true
+1284:COR:matches:TRUE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:202:matches |==> false
+1285:COR:matches:FALSE:org.marc4j.test.utils.TestUtils@compareFilesContentsLineByLine:202:matches |==> true
