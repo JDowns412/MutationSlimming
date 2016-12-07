@@ -171,6 +171,23 @@
     </javac>
   </target>
 
+  <target name="compile.mutation" depends="init" description="Compile">
+
+    <javac  srcdir="${source.home}"
+           destdir="${build.home}/classes"
+             source="${compile.source}"
+             target="${compile.target}"
+             debug="${compile.debug}"
+       deprecation="${compile.deprecation}"
+ includeantruntime="false"
+          encoding="${source.encoding}"
+          optimize="${compile.optimize}"
+          fork="yes"
+          executable="lib/major/bin/javac">
+      <classpath refid="compile.classpath"/>
+      <compilerarg value="-XMutator:ORU"/>
+    </javac>
+  </target>
 
 <!-- ========== Unit Test Targets ========================================= -->
 
@@ -200,7 +217,41 @@
                errorProperty="test.failed"
                failureProperty="test.failed"
                fork="true"
-               showOutput="true">
+	             showOutput="true">
+               <formatter type="brief"/>
+               <classpath refid="test.classpath"/>
+               <!-- If test.entry is defined, run a single test, otherwise run all valid tests -->
+               <!-- N.B. test.entry must be the full path to the test class, for example:
+               ant test -Dtest.entry=org.apache.commons.math3.util.FastMathTestPerformance
+               -->
+               <test name="${test.entry}" todir="${test.reports}" if="test.entry"/>
+               <batchtest todir="${test.reports}" unless="test.entry">
+                   <fileset dir="${test.home}">
+                      <include name="**/*Test.java"/> 
+                      <include name="**/*TestBinary.java"/> 
+                      <include name="**/*TestPermutations.java"/> 
+                      <exclude name="**/*AbstractTest.java"/>
+                   </fileset>
+               </batchtest>
+       </junit>
+       <fail message="There were test failures.">
+           <condition>
+               <and>
+                   <istrue value="${test.failonerror}"/>
+                   <isset property="test.failed"/>
+               </and>
+           </condition>
+     </fail>
+  </target>
+
+  <target name="test.mutation"  depends="compile.tests"
+                       description="Run unit tests">
+      <mkdir dir="${test.reports}"/>
+      <junit printsummary="true"
+               errorProperty="test.failed"
+               failureProperty="test.failed"
+               showOutput="true"
+               mutationAnalysis="true">
                <formatter type="brief"/>
                <classpath refid="test.classpath"/>
                <!-- If test.entry is defined, run a single test, otherwise run all valid tests -->

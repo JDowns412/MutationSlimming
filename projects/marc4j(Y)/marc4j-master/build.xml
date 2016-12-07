@@ -52,16 +52,18 @@
     </target>
 
     <target name="compile-codegen" depends="codetablegen">
-        <javac encoding="UTF-8" srcdir="${build.generated-src.dir}" destdir="${build.classes.dir}" includes="**/*Generated.java" debug="false">
+        <javac encoding="UTF-8" srcdir="${build.generated-src.dir}" destdir="${build.classes.dir}" includes="**/*Generated.java" debug="false" fork="yes" executable="lib/major/bin/javac">
             <classpath refid="classpath" />
+            <compilerarg value="-XMutator:ALL"/>
         </javac>
 
     </target>
     <target name="compile-all" depends="compile-base,compile-codegen"/>
 
     <target name="compile-base" depends="prepare">
-        <javac encoding="UTF-8" srcdir="${src.dir}" destdir="${build.classes.dir}" includes="**/*.java" excludes="**/*Generated.java" debug="true" debuglevel="source,lines,vars">
+        <javac encoding="UTF-8" srcdir="${src.dir}" destdir="${build.classes.dir}" includes="**/*.java" excludes="**/*Generated.java" debug="true" debuglevel="source,lines,vars" fork="yes" executable="lib/major/bin/javac">
             <classpath refid="classpath" />
+            <compilerarg value="-XMutator:ALL"/>
         </javac>
         <copy todir="${build.classes.dir}">
             <fileset dir="${src.dir}">
@@ -74,13 +76,14 @@
     </target>
 
     <target name="compile-tests" depends="compile-all">
-        <javac encoding="UTF-8" srcdir="${test.src.dir}" destdir="${build.test-classes.dir}" includes="**/*.java" excludes="**/*Generated.java" debug="true" debuglevel="source,lines,vars">
+        <javac encoding="UTF-8" srcdir="${test.src.dir}" destdir="${build.test-classes.dir}" includes="**/*.java" excludes="**/*Generated.java" debug="true" debuglevel="source,lines,vars" fork="yes" executable="lib/major/bin/javac">
             <classpath refid="test.classpath" />
+            <compilerarg value="-XMutator:ALL"/>
         </javac>
     </target>
 
     <target name="test" depends="compile-all,compile-tests">
-        <junit fork="yes" forkmode="perBatch" haltonfailure="true">
+        <junit haltonfailure="true" mutationAnalysis="true">
             <batchtest>
                 <fileset dir="${test.src.dir}">
                     <exclude name="org/marc4j/test/utils/**"/>

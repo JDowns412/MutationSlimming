@@ -123,7 +123,11 @@
                  testMapFile="${dir.mut}/testMap.csv"
                  summaryFile="${dir.mut}/summary.csv"
                   resultFile="${dir.mut}/results.csv"
-             killDetailsFile="${dir.mut}/killed.csv">
+             killDetailsFile="${dir.mut}/killed.csv"
+		exportCovMap="true"
+		covMapFile="${dir.mut}/coverageMap.csv"
+		exportKillMap="true"
+                killMapFile="${dir.mut}/killMap.csv">
 
             <classpath path=".mutated"/>
             <classpath path="bin"/>
