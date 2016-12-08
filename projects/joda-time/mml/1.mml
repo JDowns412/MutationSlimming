@@ -1,0 +1,63 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Use sufficient replacements for ROR
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Use sufficient replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Delete all types of statements (STD operator)
+DEL(CALL);
+DEL(INC/DEC);
+DEL(ASSIGN);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.joda.time.Partial
+AOR<"org.joda.time.Partial">;
+LOR<"org.joda.time.Partial">;
+SOR<"org.joda.time.Partial">;
+COR<"org.joda.time.Partial">;
+ROR<"org.joda.time.Partial">;
+ORU<"org.joda.time.Partial">;
+LVR<"org.joda.time.Partial">;
+STD<"org.joda.time.Partial">;
+
+// Enable operators for org.joda.time.field.UnsupportedDurationField
+AOR<"org.joda.time.field.UnsupportedDurationField">;
+LOR<"org.joda.time.field.UnsupportedDurationField">;
+SOR<"org.joda.time.field.UnsupportedDurationField">;
+COR<"org.joda.time.field.UnsupportedDurationField">;
+ROR<"org.joda.time.field.UnsupportedDurationField">;
+ORU<"org.joda.time.field.UnsupportedDurationField">;
+LVR<"org.joda.time.field.UnsupportedDurationField">;
+STD<"org.joda.time.field.UnsupportedDurationField">;
