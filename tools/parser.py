@@ -50,8 +50,23 @@ def parseSuites(inSuiteFile, info):
 				#row is a list of length 1 (I don't know why), so we take it's 0 index which is a string that represents the row. 
 				#We split that on a comma, and then take the two components that we want to extract
 				#initializes the dictionary that will hold information on the test suites
-				info["suites"][row[0].split(',')[0]] = {"mutantsKilled" : [], "operatorStats" : {}}
+				info["suites"][row[0].split(',')[0]] = {"mutantsKilled" : [], "operatorStats" : {}, "mutantsRelevant" : []}
 				info["suites"][row[0].split(',')[0]]["name"] = row[0].split(',')[1]
+			else:
+				#prevents us from parsing in the description row as numbers
+				firstRow = False
+
+def parseCoverage(inCoverageFile, info):
+	with open(inCoverageFile, 'rb') as csvfile:
+		coveragereader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+		firstRow = True
+		for row in coveragereader:
+			#pull out the mutant number 
+			if not firstRow:
+				#row is a list of length 1 (I don't know why), so we take it's 0 index which is a string that represents the row. 
+				#We split that on a comma, and then take the two components that we want to extract
+				#initializes the dictionary that will hold information on the test suites
+				info["suites"][row[0].split(',')[0]]["mutantsRelevant"].append(row[0].split(',')[1])
 			else:
 				#prevents us from parsing in the description row as numbers
 				firstRow = False
@@ -109,26 +124,27 @@ def writeOut(outFile, info):
 			mutantWriter.writerow([(num+1), info["mutants"][str(num+1)]['operator'], info["mutants"][str(num+1)]['killedBy'], info["mutants"][str(num+1)]['Description']])
 
 	with open('results.json', 'w') as outfile:
-		json.dump(info, outfile, indent=4, sort_keys=True)
+		json.dump(info, outfile, indent=5, sort_keys=True)
 
-def helpMessage():
-	print "incorrect usage, intended usage is:"
-	print "[%s mutants.log killMap.csv testMap.csv out.csv]" % sys.argv[0]
+def helpMessage(argNum):
+	print ("incorrect usage, intended usage is for 5 operators, not %d:" % argNum)
+	print "[%s mutants.log killMap.csv testMap.csv coverageMap.csv out.csv]" % sys.argv[0]
 
 if __name__=="__main__":    
 	#make sure that the arguments passed in are the right possibilities to make the program run
-    if len(sys.argv) != 5:
-        helpMessage()
+    if len(sys.argv) != 6:
+        helpMessage(len(sys.argv))
     else:
     	info = {"mutants" : {}, "suites" : {}, "operators" : {}}
         parseMutants(sys.argv[1], info)
         parseKilled(sys.argv[2], info)
         parseSuites(sys.argv[3], info)
+        parseCoverage(sys.argv[4], info)
         aggregateOperators(info)
         aggregateSuites(info)
         
 		#writeOut needs to be the last method called since it also writes our results JSON file out.
-        writeOut(sys.argv[4], info)
+        writeOut(sys.argv[5], info)
 	
 	#this was used to view the dictionary of mutants for debugging purposes
 	pprint.pprint(info)
