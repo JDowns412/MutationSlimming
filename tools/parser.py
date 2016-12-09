@@ -50,11 +50,52 @@ def parseSuites(inSuiteFile, info):
 				#row is a list of length 1 (I don't know why), so we take it's 0 index which is a string that represents the row. 
 				#We split that on a comma, and then take the two components that we want to extract
 				#initializes the dictionary that will hold information on the test suites
-				info["mutants"][row[0].split(',')[0]] = {}
+				info["suites"][row[0].split(',')[0]] = {"mutantsKilled" : [], "operatorStats" : {}}
 				info["suites"][row[0].split(',')[0]]["name"] = row[0].split(',')[1]
 			else:
 				#prevents us from parsing in the description row as numbers
 				firstRow = False
+
+def aggregateOperators(info):
+	totalMutants = 0.0
+	for row in info["mutants"]:
+		totalMutants += 1
+		operator = info["mutants"][row]["operator"]
+		killedBy = info["mutants"][row]["killedBy"]
+		if operator not in info["operators"]:
+			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row]}
+		else:
+			info["operators"][operator]["count"] += 1
+			info["operators"][operator]["mutants"].append(row)
+
+		# A mutant was killed if at least one test suite killed it
+		if len(killedBy) > 0:
+			info["operators"][operator]["numKilled"] += 1
+
+	
+	#calculate what percentage of the total number of mutants each operator takes up
+	for op in info["operators"]:
+		info["operators"][op]["percentageOfTotal"] = info["operators"][op]["count"]/totalMutants
+		info["operators"][op]["percentageKilled"] = info["operators"][op]["numKilled"]/info["operators"][op]["count"]
+
+def aggregateSuites(info):
+	for row in info["mutants"]:
+		operator = info["mutants"][row]["operator"]
+		killedBy = info["mutants"][row]["killedBy"]
+
+		for suite in killedBy:
+			info["suites"][suite]["mutantsKilled"].append(row)
+			if operator not in info["suites"][suite]["operatorStats"]:
+				info["suites"][suite]["operatorStats"][operator] = {"count" : 0}
+			
+			info["suites"][suite]["operatorStats"][operator]["count"] += 1
+
+	for suite in info["suites"]:
+		for operator in info["suites"][suite]["operatorStats"]:
+			suiteCount = info["suites"][suite]["operatorStats"][operator]["count"]
+			totalCount = info["operators"][operator]["count"]
+			info["suites"][suite]["operatorStats"][operator]["percentOfAll"] = suiteCount/totalCount
+
 
 def writeCsv(outFile, info):
 	with open(outFile, 'wb') as csvfile:
@@ -80,6 +121,8 @@ if __name__=="__main__":
         parseMutants(sys.argv[1], info)
         parseKilled(sys.argv[2], info)
         parseSuites(sys.argv[3], info)
+        aggregateOperators(info)
+        aggregateSuites(info)
         writeCsv(sys.argv[4], info)
 	
 	#this was used to view the dictionary of mutants for debugging purposes
