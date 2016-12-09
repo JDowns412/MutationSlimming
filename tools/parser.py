@@ -109,7 +109,7 @@ def writeOut(outFile, info):
 			mutantWriter.writerow([(num+1), info["mutants"][str(num+1)]['operator'], info["mutants"][str(num+1)]['killedBy'], info["mutants"][str(num+1)]['Description']])
 
 	with open('results.json', 'w') as outfile:
-		json.dump(info, outfile)
+		json.dump(info, outfile, indent=4, sort_keys=True)
 
 def helpMessage():
 	print "incorrect usage, intended usage is:"
