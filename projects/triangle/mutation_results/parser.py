@@ -1,15 +1,12 @@
-# Author: Jacob Downs, Spencer Gagnon
+# Author: Jacob Downs
 # 
-# Usage: python parser.py mutants.log killMap.csv testMap.csv out.csv
+# Usage: python parser.py mutants.log killMap.csv out.csv
 # 
 # Where mutants.log is the default name of the file that Major outputs to document information about each particular 
 #			mutant (ID, Mutation operator class, Description)
 #       
 #		killMap.csv is the default name of the file that Major outputs to document the full kill matrix of all test suites
 #       
-#		testMap.csv is the name of the default file name that Major gives it's mapping of test suite numbers to their 
-#			actual .java file names
-#
 #		out.csv is the name of the output .csv file that you choose. 
 #			You may change this name, but the other two previous filenames are hard-coded into Major itself and cannot be changed
 
@@ -40,22 +37,6 @@ def parseKilled(inKilleldFile, info):
 				#prevents us from parsing in the description row as numbers
 				firstRow = False
 
-def parseSuites(inSuiteFile, info):
-	with open(inSuiteFile, 'rb') as csvfile:
-		suitereader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-		firstRow = True
-		for row in suitereader:
-			#pull out the mutant number 
-			if not firstRow:
-				#row is a list of length 1 (I don't know why), so we take it's 0 index which is a string that represents the row. 
-				#We split that on a comma, and then take the two components that we want to extract
-				#initializes the dictionary that will hold information on the test suites
-				info["mutants"][row[0].split(',')[0]] = {}
-				info["suites"][row[0].split(',')[0]]["name"] = row[0].split(',')[1]
-			else:
-				#prevents us from parsing in the description row as numbers
-				firstRow = False
-
 def writeCsv(outFile, info):
 	with open(outFile, 'wb') as csvfile:
 		#declares the writer object with a comma as a delimiter (since we're using a csv output)
@@ -69,18 +50,18 @@ def writeCsv(outFile, info):
 
 def helpMessage():
 	print "incorrect usage, intended usage is:"
-	print "[%s mutants.log killMap.csv testMap.csv out.csv]" % sys.argv[0]
+	print "%s [mutants.log, killMap.csv, out.csv]" % sys.argv[0]
 
 if __name__=="__main__":    
 	#make sure that the arguments passed in are the right possibilities to make the program run
-    if len(sys.argv) != 5:
+    if len(sys.argv) != 4:
         helpMessage()
     else:
-    	info = {"mutants" : {}, "suites" : {}, "operators" : {}}
+    	info = {"mutants" : {}, "suites" : {}, }
         parseMutants(sys.argv[1], info)
         parseKilled(sys.argv[2], info)
-        parseSuites(sys.argv[3], info)
-        writeCsv(sys.argv[4], info)
+        writeCsv(sys.argv[3], info)
 	
+	print ("hi")
 	#this was used to view the dictionary of mutants for debugging purposes
 	pprint.pprint(info)
