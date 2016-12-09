@@ -94,22 +94,38 @@ def aggregateOperators(info):
 		info["operators"][op]["percentageKilled"] = info["operators"][op]["numKilled"]/info["operators"][op]["count"]
 
 def aggregateSuites(info):
+	for s in info["suites"]:
+		for op in info["operators"]:
+			info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0}
+
 	for row in info["mutants"]:
 		operator = info["mutants"][row]["operator"]
 		killedBy = info["mutants"][row]["killedBy"]
 
 		for suite in killedBy:
 			info["suites"][suite]["mutantsKilled"].append(row)
-			if operator not in info["suites"][suite]["operatorStats"]:
-				info["suites"][suite]["operatorStats"][operator] = {"count" : 0}
-			
-			info["suites"][suite]["operatorStats"][operator]["count"] += 1
+
+			info["suites"][suite]["operatorStats"][operator]["killCount"] += 1
 
 	for suite in info["suites"]:
 		for operator in info["suites"][suite]["operatorStats"]:
-			suiteCount = info["suites"][suite]["operatorStats"][operator]["count"]
+			suiteCount = info["suites"][suite]["operatorStats"][operator]["killCount"]
 			totalCount = info["operators"][operator]["count"]
 			info["suites"][suite]["operatorStats"][operator]["percentOfAll"] = suiteCount/totalCount
+
+def calculateRelevantMutantsKilled(info):
+	for row in info["suites"]:
+		for mutant in info["suites"][row]["mutantsRelevant"]:
+			mutantCategory = info["mutants"][mutant]["operator"]
+			info["suites"][row]["operatorStats"][mutantCategory]["relevantCount"] += 1
+
+		for op in info["suites"][row]["operatorStats"]:
+			killCount = info["suites"][row]["operatorStats"][op]["killCount"]
+			relevantCount = info["suites"][row]["operatorStats"][op]["relevantCount"]
+
+			if info["suites"][row]["operatorStats"][op]["relevantCount"] > 0:
+				info["suites"][row]["operatorStats"][op]["percentRelevantKilled"] = killCount/relevantCount
+
 
 
 def writeOut(outFile, info):
@@ -142,6 +158,7 @@ if __name__=="__main__":
         parseCoverage(sys.argv[4], info)
         aggregateOperators(info)
         aggregateSuites(info)
+        calculateRelevantMutantsKilled(info)
         
 		#writeOut needs to be the last method called since it also writes our results JSON file out.
         writeOut(sys.argv[5], info)
