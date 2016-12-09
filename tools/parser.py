@@ -14,7 +14,7 @@
 #			You may change this name, but the other two previous filenames are hard-coded into Major itself and cannot be changed
 
 
-import sys, csv, pprint
+import sys, csv, pprint, json
 
 def parseMutants(inMutatantsFile, info):
 	with open(inMutatantsFile, 'rb') as mutantFile:
@@ -97,7 +97,7 @@ def aggregateSuites(info):
 			info["suites"][suite]["operatorStats"][operator]["percentOfAll"] = suiteCount/totalCount
 
 
-def writeCsv(outFile, info):
+def writeOut(outFile, info):
 	with open(outFile, 'wb') as csvfile:
 		#declares the writer object with a comma as a delimiter (since we're using a csv output)
   		mutantWriter = csv.writer(csvfile, delimiter=',')
@@ -107,6 +107,9 @@ def writeCsv(outFile, info):
 		#keys (mutant ID #'s') to keep things ordered
 		for num in range(len(info["mutants"])):
 			mutantWriter.writerow([(num+1), info["mutants"][str(num+1)]['operator'], info["mutants"][str(num+1)]['killedBy'], info["mutants"][str(num+1)]['Description']])
+
+	with open('results.json', 'w') as outfile:
+		json.dump(info, outfile)
 
 def helpMessage():
 	print "incorrect usage, intended usage is:"
@@ -123,7 +126,9 @@ if __name__=="__main__":
         parseSuites(sys.argv[3], info)
         aggregateOperators(info)
         aggregateSuites(info)
-        writeCsv(sys.argv[4], info)
+        
+		#writeOut needs to be the last method called since it also writes our results JSON file out.
+        writeOut(sys.argv[4], info)
 	
 	#this was used to view the dictionary of mutants for debugging purposes
 	pprint.pprint(info)
