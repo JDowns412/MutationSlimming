@@ -126,9 +126,7 @@ def calculateRelevantMutantsKilled(info):
 			if info["suites"][row]["operatorStats"][op]["relevantCount"] > 0:
 				info["suites"][row]["operatorStats"][op]["percentRelevantKilled"] = killCount/relevantCount
 
-
-
-def writeOut(outFile, info):
+def writeOut(outFile, outRatios, info):
 	with open(outFile, 'wb') as csvfile:
 		#declares the writer object with a comma as a delimiter (since we're using a csv output)
   		mutantWriter = csv.writer(csvfile, delimiter=',')
@@ -139,16 +137,81 @@ def writeOut(outFile, info):
 		for num in range(len(info["mutants"])):
 			mutantWriter.writerow([(num+1), info["mutants"][str(num+1)]['operator'], info["mutants"][str(num+1)]['killedBy'], info["mutants"][str(num+1)]['Description']])
 
+
+	#info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0}
+
+	#Write out the csv file that will be used for graphing our preliminary results 
+	#(The multi-line graph that Spencer and I were talking about)
+	with open(outRatios, 'wb') as ratioFile:
+		#declares the writer object with a comma as a delimiter (since we're using a csv output)
+  		ratioWriter = csv.writer(ratioFile, delimiter=',')
+  		#title row
+   		ratioWriter.writerow(['Suite', 'AOR','LOR','COR','ROR', 'SOR', 'ORU', 'STD', 'LVR'])
+		#iterates through all the keys in the dictionary. Used range() to numerically sort the 
+		#keys (mutant ID #'s') to keep things ordered
+		aor = ""
+		lor = ""
+		cor = ""
+		ror = ""
+		sor = ""
+		oru = ""
+		std = ""
+		lvr = ""
+
+		for suit in info["suites"]:
+
+			if "AOR" in info["suites"][suit]["operatorStats"]:
+				aor = info["suites"][suit]["operatorStats"]["AOR"]["percentRelevantKilled"]
+			else:
+				aor = 0
+
+			if "LOR" in info["suites"][suit]["operatorStats"]:
+				lor = info["suites"][suit]["operatorStats"]["LOR"]["percentRelevantKilled"]
+			else:
+				lor = 0
+
+			if "COR" in info["suites"][suit]["operatorStats"]:
+				cor = info["suites"][suit]["operatorStats"]["COR"]["percentRelevantKilled"]
+			else:
+				cor = 0
+
+			if "ROR" in info["suites"][suit]["operatorStats"]:
+				ror = info["suites"][suit]["operatorStats"]["ROR"]["percentRelevantKilled"]
+			else:
+				ror = 0
+
+			if "SOR" in info["suites"][suit]["operatorStats"]:
+				sor = info["suites"][suit]["operatorStats"]["SOR"]["percentRelevantKilled"]
+			else:
+				sor = 0
+
+			if "ORU" in info["suites"][suit]["operatorStats"]:
+				oru = info["suites"][suit]["operatorStats"]["ORU"]["percentRelevantKilled"]
+			else:
+				oru = 0
+
+			if "STD" in info["suites"][suit]["operatorStats"]:
+				std = info["suites"][suit]["operatorStats"]["STD"]["percentRelevantKilled"]
+			else:
+				std = 0
+
+			if "LVR" in info["suites"][suit]["operatorStats"]:
+				lvr = info["suites"][suit]["operatorStats"]["LVR"]["percentRelevantKilled"]
+			else:
+				lvr = 0
+
+			ratioWriter.writerow([suit, aor, lor, cor, ror, sor, oru, std, lvr])
+
 	with open('results.json', 'w') as outfile:
 		json.dump(info, outfile, indent=5, sort_keys=True)
 
 def helpMessage(argNum):
 	print ("incorrect usage, intended usage is for 5 operators, not %d:" % argNum)
-	print "[%s mutants.log killMap.csv testMap.csv coverageMap.csv out.csv]" % sys.argv[0]
+	print "[%s mutants.log killMap.csv testMap.csv coverageMap.csv out.csv ratios.csv]" % sys.argv[0]
 
 if __name__=="__main__":    
 	#make sure that the arguments passed in are the right possibilities to make the program run
-    if len(sys.argv) != 6:
+    if len(sys.argv) != 7:
         helpMessage(len(sys.argv))
     else:
     	info = {"mutants" : {}, "suites" : {}, "operators" : {}}
@@ -161,7 +224,7 @@ if __name__=="__main__":
         calculateRelevantMutantsKilled(info)
         
 		#writeOut needs to be the last method called since it also writes our results JSON file out.
-        writeOut(sys.argv[5], info)
+        writeOut(sys.argv[5], sys.argv[6], info)
 	
 	#this was used to view the dictionary of mutants for debugging purposes
-	pprint.pprint(info)
+	#pprint.pprint(info)
