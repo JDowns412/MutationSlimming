@@ -1,0 +1,390 @@
+1:LVR:0:POS:org.joda.time.Partial@<init>:125:0 |==> 1
+2:LVR:0:NEG:org.joda.time.Partial@<init>:125:0 |==> -1
+3:LVR:0:POS:org.joda.time.Partial@<init>:126:0 |==> 1
+4:LVR:0:NEG:org.joda.time.Partial@<init>:126:0 |==> -1
+5:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:156:type == null |==> false
+6:STD:<CALL>:<NO-OP>:org.joda.time.Partial@<init>:161:chronology.validate(this, iValues) |==> <NO-OP>
+7:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:193:types == null |==> false
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:196:values == null |==> false
+9:ROR:!=(int,int):<(int,int):org.joda.time.Partial@<init>:199:values.length != types.length |==> values.length < types.length
+10:ROR:!=(int,int):>(int,int):org.joda.time.Partial@<init>:199:values.length != types.length |==> values.length > types.length
+11:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@<init>:199:values.length != types.length |==> true
+12:LVR:0:POS:org.joda.time.Partial@<init>:202:0 |==> 1
+13:LVR:0:NEG:org.joda.time.Partial@<init>:202:0 |==> -1
+14:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>:202:types.length == 0 |==> types.length <= 0
+15:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>:202:types.length == 0 |==> types.length >= 0
+16:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>:202:types.length == 0 |==> false
+17:LVR:0:POS:org.joda.time.Partial@<init>:207:0 |==> 1
+18:LVR:0:NEG:org.joda.time.Partial@<init>:207:0 |==> -1
+19:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>:207:i < types.length |==> i != types.length
+20:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>:207:i < types.length |==> i <= types.length
+21:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>:207:i < types.length |==> false
+22:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:208:types[i] == null |==> false
+23:LVR:0:POS:org.joda.time.Partial@<init>:213:0 |==> 1
+24:LVR:0:NEG:org.joda.time.Partial@<init>:213:0 |==> -1
+25:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>:213:i < types.length |==> i != types.length
+26:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>:213:i < types.length |==> i <= types.length
+27:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>:213:i < types.length |==> false
+28:LVR:0:POS:org.joda.time.Partial@<init>:216:0 |==> 1
+29:LVR:0:NEG:org.joda.time.Partial@<init>:216:0 |==> -1
+30:ROR:>(int,int):!=(int,int):org.joda.time.Partial@<init>:216:i > 0 |==> i != 0
+31:ROR:>(int,int):>=(int,int):org.joda.time.Partial@<init>:216:i > 0 |==> i >= 0
+32:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@<init>:216:i > 0 |==> false
+33:LVR:FALSE:TRUE:org.joda.time.Partial@<init>:217:false |==> true
+34:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.Partial@<init>:217:loopUnitField.isSupported() == false |==> false
+35:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.Partial@<init>:217:loopUnitField.isSupported() == false |==> loopUnitField.isSupported()
+36:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.Partial@<init>:217:loopUnitField.isSupported() == false |==> false
+37:COR:lastUnitField.isSupported():TRUE:org.joda.time.Partial@<init>:218:lastUnitField.isSupported() |==> false
+38:COR:lastUnitField.isSupported():FALSE:org.joda.time.Partial@<init>:218:lastUnitField.isSupported() |==> true
+39:LVR:POS:0:org.joda.time.Partial@<init>:220:1 |==> 0
+40:LVR:POS:NEG:org.joda.time.Partial@<init>:220:1 |==> -1
+41:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:220:i - 1 |==> i % 1
+42:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:220:i - 1 |==> i * 1
+43:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:220:i - 1 |==> i + 1
+44:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:220:i - 1 |==> i / 1
+45:LVR:POS:0:org.joda.time.Partial@<init>:223:1 |==> 0
+46:LVR:POS:NEG:org.joda.time.Partial@<init>:223:1 |==> -1
+47:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:223:i - 1 |==> i % 1
+48:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:223:i - 1 |==> i * 1
+49:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:223:i - 1 |==> i + 1
+50:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:223:i - 1 |==> i / 1
+51:LVR:0:POS:org.joda.time.Partial@<init>:227:0 |==> 1
+52:LVR:0:NEG:org.joda.time.Partial@<init>:227:0 |==> -1
+53:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>:227:compare < 0 |==> compare != 0
+54:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>:227:compare < 0 |==> compare <= 0
+55:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>:227:compare < 0 |==> false
+56:LVR:POS:0:org.joda.time.Partial@<init>:229:1 |==> 0
+57:LVR:POS:NEG:org.joda.time.Partial@<init>:229:1 |==> -1
+58:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:229:i - 1 |==> i % 1
+59:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:229:i - 1 |==> i * 1
+60:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:229:i - 1 |==> i + 1
+61:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:229:i - 1 |==> i / 1
+62:LVR:0:POS:org.joda.time.Partial@<init>:230:0 |==> 1
+63:LVR:0:NEG:org.joda.time.Partial@<init>:230:0 |==> -1
+64:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>:230:compare == 0 |==> compare <= 0
+65:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>:230:compare == 0 |==> compare >= 0
+66:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>:230:compare == 0 |==> false
+67:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.Partial@<init>:230:compare == 0 && lastUnitField.equals(loopUnitField) |==> compare == 0 == lastUnitField.equals(loopUnitField)
+68:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.Partial@<init>:230:compare == 0 && lastUnitField.equals(loopUnitField) |==> false
+69:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.Partial@<init>:230:compare == 0 && lastUnitField.equals(loopUnitField) |==> compare == 0
+70:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.Partial@<init>:230:compare == 0 && lastUnitField.equals(loopUnitField) |==> lastUnitField.equals(loopUnitField)
+71:LVR:POS:0:org.joda.time.Partial@<init>:231:1 |==> 0
+72:LVR:POS:NEG:org.joda.time.Partial@<init>:231:1 |==> -1
+73:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:231:i - 1 |==> i % 1
+74:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:231:i - 1 |==> i * 1
+75:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:231:i - 1 |==> i + 1
+76:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:231:i - 1 |==> i / 1
+77:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:231:types[i - 1].getRangeDurationType() == null |==> false
+78:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:232:loopType.getRangeDurationType() == null |==> false
+79:LVR:POS:0:org.joda.time.Partial@<init>:234:1 |==> 0
+80:LVR:POS:NEG:org.joda.time.Partial@<init>:234:1 |==> -1
+81:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:234:i - 1 |==> i % 1
+82:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:234:i - 1 |==> i * 1
+83:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:234:i - 1 |==> i + 1
+84:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:234:i - 1 |==> i / 1
+85:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:237:loopType.getRangeDurationType() == null |==> false
+86:LVR:POS:0:org.joda.time.Partial@<init>:239:1 |==> 0
+87:LVR:POS:NEG:org.joda.time.Partial@<init>:239:1 |==> -1
+88:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:239:i - 1 |==> i % 1
+89:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:239:i - 1 |==> i * 1
+90:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:239:i - 1 |==> i + 1
+91:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:239:i - 1 |==> i / 1
+92:LVR:POS:0:org.joda.time.Partial@<init>:241:1 |==> 0
+93:LVR:POS:NEG:org.joda.time.Partial@<init>:241:1 |==> -1
+94:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:241:i - 1 |==> i % 1
+95:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:241:i - 1 |==> i * 1
+96:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:241:i - 1 |==> i + 1
+97:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:241:i - 1 |==> i / 1
+98:LVR:0:POS:org.joda.time.Partial@<init>:243:0 |==> 1
+99:LVR:0:NEG:org.joda.time.Partial@<init>:243:0 |==> -1
+100:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>:243:lastRangeField.compareTo(loopRangeField) < 0 |==> lastRangeField.compareTo(loopRangeField) != 0
+101:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>:243:lastRangeField.compareTo(loopRangeField) < 0 |==> lastRangeField.compareTo(loopRangeField) <= 0
+102:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>:243:lastRangeField.compareTo(loopRangeField) < 0 |==> false
+103:LVR:POS:0:org.joda.time.Partial@<init>:245:1 |==> 0
+104:LVR:POS:NEG:org.joda.time.Partial@<init>:245:1 |==> -1
+105:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:245:i - 1 |==> i % 1
+106:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:245:i - 1 |==> i * 1
+107:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:245:i - 1 |==> i + 1
+108:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:245:i - 1 |==> i / 1
+109:LVR:0:POS:org.joda.time.Partial@<init>:247:0 |==> 1
+110:LVR:0:NEG:org.joda.time.Partial@<init>:247:0 |==> -1
+111:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>:247:lastRangeField.compareTo(loopRangeField) == 0 |==> lastRangeField.compareTo(loopRangeField) <= 0
+112:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>:247:lastRangeField.compareTo(loopRangeField) == 0 |==> lastRangeField.compareTo(loopRangeField) >= 0
+113:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>:247:lastRangeField.compareTo(loopRangeField) == 0 |==> false
+114:LVR:POS:0:org.joda.time.Partial@<init>:249:1 |==> 0
+115:LVR:POS:NEG:org.joda.time.Partial@<init>:249:1 |==> -1
+116:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>:249:i - 1 |==> i % 1
+117:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>:249:i - 1 |==> i * 1
+118:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>:249:i - 1 |==> i + 1
+119:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>:249:i - 1 |==> i / 1
+120:STD:<CALL>:<NO-OP>:org.joda.time.Partial@<init>:258:chronology.validate(this, values) |==> <NO-OP>
+121:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>:270:partial == null |==> false
+122:LVR:0:POS:org.joda.time.Partial@<init>:276:0 |==> 1
+123:LVR:0:NEG:org.joda.time.Partial@<init>:276:0 |==> -1
+124:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>:276:i < partial.size() |==> i != partial.size()
+125:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>:276:i < partial.size() |==> i <= partial.size()
+126:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>:276:i < partial.size() |==> false
+127:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@withChronologyRetainFields:413:newChronology == getChronology() |==> false
+128:STD:<CALL>:<NO-OP>:org.joda.time.Partial@withChronologyRetainFields:417:newChronology.validate(newPartial, iValues) |==> <NO-OP>
+129:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@with:438:fieldType == null |==> false
+130:LVR:NEG:0:org.joda.time.Partial@with:442:-1 |==> 0
+131:LVR:NEG:POS:org.joda.time.Partial@with:442:-1 |==> 1
+132:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with:442:index == -1 |==> index <= -1
+133:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with:442:index == -1 |==> index >= -1
+134:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with:442:index == -1 |==> false
+135:LVR:POS:0:org.joda.time.Partial@with:443:1 |==> 0
+136:LVR:POS:NEG:org.joda.time.Partial@with:443:1 |==> -1
+137:AOR:+(int,int):%(int,int):org.joda.time.Partial@with:443:iTypes.length + 1 |==> iTypes.length % 1
+138:AOR:+(int,int):*(int,int):org.joda.time.Partial@with:443:iTypes.length + 1 |==> iTypes.length * 1
+139:AOR:+(int,int):-(int,int):org.joda.time.Partial@with:443:iTypes.length + 1 |==> iTypes.length - 1
+140:AOR:+(int,int):/(int,int):org.joda.time.Partial@with:443:iTypes.length + 1 |==> iTypes.length / 1
+141:LVR:0:POS:org.joda.time.Partial@with:447:0 |==> 1
+142:LVR:0:NEG:org.joda.time.Partial@with:447:0 |==> -1
+143:COR:unitField.isSupported():TRUE:org.joda.time.Partial@with:449:unitField.isSupported() |==> false
+144:COR:unitField.isSupported():FALSE:org.joda.time.Partial@with:449:unitField.isSupported() |==> true
+145:ROR:<(int,int):!=(int,int):org.joda.time.Partial@with:450:i < iTypes.length |==> i != iTypes.length
+146:ROR:<(int,int):<=(int,int):org.joda.time.Partial@with:450:i < iTypes.length |==> i <= iTypes.length
+147:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@with:450:i < iTypes.length |==> false
+148:COR:loopUnitField.isSupported():TRUE:org.joda.time.Partial@with:453:loopUnitField.isSupported() |==> false
+149:COR:loopUnitField.isSupported():FALSE:org.joda.time.Partial@with:453:loopUnitField.isSupported() |==> true
+150:LVR:0:POS:org.joda.time.Partial@with:455:0 |==> 1
+151:LVR:0:NEG:org.joda.time.Partial@with:455:0 |==> -1
+152:ROR:>(int,int):!=(int,int):org.joda.time.Partial@with:455:compare > 0 |==> compare != 0
+153:ROR:>(int,int):>=(int,int):org.joda.time.Partial@with:455:compare > 0 |==> compare >= 0
+154:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@with:455:compare > 0 |==> false
+155:LVR:0:POS:org.joda.time.Partial@with:457:0 |==> 1
+156:LVR:0:NEG:org.joda.time.Partial@with:457:0 |==> -1
+157:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with:457:compare == 0 |==> compare <= 0
+158:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with:457:compare == 0 |==> compare >= 0
+159:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with:457:compare == 0 |==> false
+160:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@with:458:fieldType.getRangeDurationType() == null |==> false
+161:LVR:0:POS:org.joda.time.Partial@with:463:0 |==> 1
+162:LVR:0:NEG:org.joda.time.Partial@with:463:0 |==> -1
+163:ROR:>(int,int):!=(int,int):org.joda.time.Partial@with:463:rangeField.compareTo(loopRangeField) > 0 |==> rangeField.compareTo(loopRangeField) != 0
+164:ROR:>(int,int):>=(int,int):org.joda.time.Partial@with:463:rangeField.compareTo(loopRangeField) > 0 |==> rangeField.compareTo(loopRangeField) >= 0
+165:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@with:463:rangeField.compareTo(loopRangeField) > 0 |==> false
+166:LVR:0:POS:org.joda.time.Partial@with:470:0 |==> 1
+167:LVR:0:NEG:org.joda.time.Partial@with:470:0 |==> -1
+168:LVR:0:POS:org.joda.time.Partial@with:470:0 |==> 1
+169:LVR:0:NEG:org.joda.time.Partial@with:470:0 |==> -1
+170:STD:<CALL>:<NO-OP>:org.joda.time.Partial@with:470:System.arraycopy(iTypes, 0, newTypes, 0, i) |==> <NO-OP>
+171:LVR:0:POS:org.joda.time.Partial@with:471:0 |==> 1
+172:LVR:0:NEG:org.joda.time.Partial@with:471:0 |==> -1
+173:LVR:0:POS:org.joda.time.Partial@with:471:0 |==> 1
+174:LVR:0:NEG:org.joda.time.Partial@with:471:0 |==> -1
+175:STD:<CALL>:<NO-OP>:org.joda.time.Partial@with:471:System.arraycopy(iValues, 0, newValues, 0, i) |==> <NO-OP>
+176:LVR:POS:0:org.joda.time.Partial@with:474:1 |==> 0
+177:LVR:POS:NEG:org.joda.time.Partial@with:474:1 |==> -1
+178:AOR:+(int,int):%(int,int):org.joda.time.Partial@with:474:i + 1 |==> i % 1
+179:AOR:+(int,int):*(int,int):org.joda.time.Partial@with:474:i + 1 |==> i * 1
+180:AOR:+(int,int):-(int,int):org.joda.time.Partial@with:474:i + 1 |==> i - 1
+181:AOR:+(int,int):/(int,int):org.joda.time.Partial@with:474:i + 1 |==> i / 1
+182:AOR:-(int,int):%(int,int):org.joda.time.Partial@with:474:newTypes.length - i |==> newTypes.length % i
+183:AOR:-(int,int):*(int,int):org.joda.time.Partial@with:474:newTypes.length - i |==> newTypes.length * i
+184:AOR:-(int,int):+(int,int):org.joda.time.Partial@with:474:newTypes.length - i |==> newTypes.length + i
+185:AOR:-(int,int):/(int,int):org.joda.time.Partial@with:474:newTypes.length - i |==> newTypes.length / i
+186:LVR:POS:0:org.joda.time.Partial@with:474:1 |==> 0
+187:LVR:POS:NEG:org.joda.time.Partial@with:474:1 |==> -1
+188:AOR:-(int,int):%(int,int):org.joda.time.Partial@with:474:newTypes.length - i - 1 |==> (newTypes.length - i) % 1
+189:AOR:-(int,int):*(int,int):org.joda.time.Partial@with:474:newTypes.length - i - 1 |==> (newTypes.length - i) * 1
+190:AOR:-(int,int):+(int,int):org.joda.time.Partial@with:474:newTypes.length - i - 1 |==> newTypes.length - i + 1
+191:AOR:-(int,int):/(int,int):org.joda.time.Partial@with:474:newTypes.length - i - 1 |==> (newTypes.length - i) / 1
+192:STD:<CALL>:<NO-OP>:org.joda.time.Partial@with:474:System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1) |==> <NO-OP>
+193:LVR:POS:0:org.joda.time.Partial@with:475:1 |==> 0
+194:LVR:POS:NEG:org.joda.time.Partial@with:475:1 |==> -1
+195:AOR:+(int,int):%(int,int):org.joda.time.Partial@with:475:i + 1 |==> i % 1
+196:AOR:+(int,int):*(int,int):org.joda.time.Partial@with:475:i + 1 |==> i * 1
+197:AOR:+(int,int):-(int,int):org.joda.time.Partial@with:475:i + 1 |==> i - 1
+198:AOR:+(int,int):/(int,int):org.joda.time.Partial@with:475:i + 1 |==> i / 1
+199:AOR:-(int,int):%(int,int):org.joda.time.Partial@with:475:newValues.length - i |==> newValues.length % i
+200:AOR:-(int,int):*(int,int):org.joda.time.Partial@with:475:newValues.length - i |==> newValues.length * i
+201:AOR:-(int,int):+(int,int):org.joda.time.Partial@with:475:newValues.length - i |==> newValues.length + i
+202:AOR:-(int,int):/(int,int):org.joda.time.Partial@with:475:newValues.length - i |==> newValues.length / i
+203:LVR:POS:0:org.joda.time.Partial@with:475:1 |==> 0
+204:LVR:POS:NEG:org.joda.time.Partial@with:475:1 |==> -1
+205:AOR:-(int,int):%(int,int):org.joda.time.Partial@with:475:newValues.length - i - 1 |==> (newValues.length - i) % 1
+206:AOR:-(int,int):*(int,int):org.joda.time.Partial@with:475:newValues.length - i - 1 |==> (newValues.length - i) * 1
+207:AOR:-(int,int):+(int,int):org.joda.time.Partial@with:475:newValues.length - i - 1 |==> newValues.length - i + 1
+208:AOR:-(int,int):/(int,int):org.joda.time.Partial@with:475:newValues.length - i - 1 |==> (newValues.length - i) / 1
+209:STD:<CALL>:<NO-OP>:org.joda.time.Partial@with:475:System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1) |==> <NO-OP>
+210:STD:<CALL>:<NO-OP>:org.joda.time.Partial@with:479:iChronology.validate(newPartial, newValues) |==> <NO-OP>
+211:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with:482:value == getValue(index) |==> value <= getValue(index)
+212:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with:482:value == getValue(index) |==> value >= getValue(index)
+213:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with:482:value == getValue(index) |==> false
+214:LVR:NEG:0:org.joda.time.Partial@without:500:-1 |==> 0
+215:LVR:NEG:POS:org.joda.time.Partial@without:500:-1 |==> 1
+216:ROR:!=(int,int):<(int,int):org.joda.time.Partial@without:500:index != -1 |==> index < -1
+217:ROR:!=(int,int):>(int,int):org.joda.time.Partial@without:500:index != -1 |==> index > -1
+218:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@without:500:index != -1 |==> true
+219:LVR:POS:0:org.joda.time.Partial@without:501:1 |==> 0
+220:LVR:POS:NEG:org.joda.time.Partial@without:501:1 |==> -1
+221:AOR:-(int,int):%(int,int):org.joda.time.Partial@without:501:size() - 1 |==> size() % 1
+222:AOR:-(int,int):*(int,int):org.joda.time.Partial@without:501:size() - 1 |==> size() * 1
+223:AOR:-(int,int):+(int,int):org.joda.time.Partial@without:501:size() - 1 |==> size() + 1
+224:AOR:-(int,int):/(int,int):org.joda.time.Partial@without:501:size() - 1 |==> size() / 1
+225:LVR:POS:0:org.joda.time.Partial@without:502:1 |==> 0
+226:LVR:POS:NEG:org.joda.time.Partial@without:502:1 |==> -1
+227:AOR:-(int,int):%(int,int):org.joda.time.Partial@without:502:size() - 1 |==> size() % 1
+228:AOR:-(int,int):*(int,int):org.joda.time.Partial@without:502:size() - 1 |==> size() * 1
+229:AOR:-(int,int):+(int,int):org.joda.time.Partial@without:502:size() - 1 |==> size() + 1
+230:AOR:-(int,int):/(int,int):org.joda.time.Partial@without:502:size() - 1 |==> size() / 1
+231:LVR:0:POS:org.joda.time.Partial@without:503:0 |==> 1
+232:LVR:0:NEG:org.joda.time.Partial@without:503:0 |==> -1
+233:LVR:0:POS:org.joda.time.Partial@without:503:0 |==> 1
+234:LVR:0:NEG:org.joda.time.Partial@without:503:0 |==> -1
+235:STD:<CALL>:<NO-OP>:org.joda.time.Partial@without:503:System.arraycopy(iTypes, 0, newTypes, 0, index) |==> <NO-OP>
+236:LVR:POS:0:org.joda.time.Partial@without:504:1 |==> 0
+237:LVR:POS:NEG:org.joda.time.Partial@without:504:1 |==> -1
+238:AOR:+(int,int):%(int,int):org.joda.time.Partial@without:504:index + 1 |==> index % 1
+239:AOR:+(int,int):*(int,int):org.joda.time.Partial@without:504:index + 1 |==> index * 1
+240:AOR:+(int,int):-(int,int):org.joda.time.Partial@without:504:index + 1 |==> index - 1
+241:AOR:+(int,int):/(int,int):org.joda.time.Partial@without:504:index + 1 |==> index / 1
+242:AOR:-(int,int):%(int,int):org.joda.time.Partial@without:504:newTypes.length - index |==> newTypes.length % index
+243:AOR:-(int,int):*(int,int):org.joda.time.Partial@without:504:newTypes.length - index |==> newTypes.length * index
+244:AOR:-(int,int):+(int,int):org.joda.time.Partial@without:504:newTypes.length - index |==> newTypes.length + index
+245:AOR:-(int,int):/(int,int):org.joda.time.Partial@without:504:newTypes.length - index |==> newTypes.length / index
+246:STD:<CALL>:<NO-OP>:org.joda.time.Partial@without:504:System.arraycopy(iTypes, index + 1, newTypes, index, newTypes.length - index) |==> <NO-OP>
+247:LVR:0:POS:org.joda.time.Partial@without:505:0 |==> 1
+248:LVR:0:NEG:org.joda.time.Partial@without:505:0 |==> -1
+249:LVR:0:POS:org.joda.time.Partial@without:505:0 |==> 1
+250:LVR:0:NEG:org.joda.time.Partial@without:505:0 |==> -1
+251:STD:<CALL>:<NO-OP>:org.joda.time.Partial@without:505:System.arraycopy(iValues, 0, newValues, 0, index) |==> <NO-OP>
+252:LVR:POS:0:org.joda.time.Partial@without:506:1 |==> 0
+253:LVR:POS:NEG:org.joda.time.Partial@without:506:1 |==> -1
+254:AOR:+(int,int):%(int,int):org.joda.time.Partial@without:506:index + 1 |==> index % 1
+255:AOR:+(int,int):*(int,int):org.joda.time.Partial@without:506:index + 1 |==> index * 1
+256:AOR:+(int,int):-(int,int):org.joda.time.Partial@without:506:index + 1 |==> index - 1
+257:AOR:+(int,int):/(int,int):org.joda.time.Partial@without:506:index + 1 |==> index / 1
+258:AOR:-(int,int):%(int,int):org.joda.time.Partial@without:506:newValues.length - index |==> newValues.length % index
+259:AOR:-(int,int):*(int,int):org.joda.time.Partial@without:506:newValues.length - index |==> newValues.length * index
+260:AOR:-(int,int):+(int,int):org.joda.time.Partial@without:506:newValues.length - index |==> newValues.length + index
+261:AOR:-(int,int):/(int,int):org.joda.time.Partial@without:506:newValues.length - index |==> newValues.length / index
+262:STD:<CALL>:<NO-OP>:org.joda.time.Partial@without:506:System.arraycopy(iValues, index + 1, newValues, index, newValues.length - index) |==> <NO-OP>
+263:STD:<CALL>:<NO-OP>:org.joda.time.Partial@without:508:iChronology.validate(newPartial, newValues) |==> <NO-OP>
+264:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withField:531:value == getValue(index) |==> value <= getValue(index)
+265:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withField:531:value == getValue(index) |==> value >= getValue(index)
+266:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withField:531:value == getValue(index) |==> false
+267:LVR:0:POS:org.joda.time.Partial@withFieldAdded:555:0 |==> 1
+268:LVR:0:NEG:org.joda.time.Partial@withFieldAdded:555:0 |==> -1
+269:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withFieldAdded:555:amount == 0 |==> amount <= 0
+270:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withFieldAdded:555:amount == 0 |==> amount >= 0
+271:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withFieldAdded:555:amount == 0 |==> false
+272:LVR:0:POS:org.joda.time.Partial@withFieldAddWrapped:579:0 |==> 1
+273:LVR:0:NEG:org.joda.time.Partial@withFieldAddWrapped:579:0 |==> -1
+274:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withFieldAddWrapped:579:amount == 0 |==> amount <= 0
+275:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withFieldAddWrapped:579:amount == 0 |==> amount >= 0
+276:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withFieldAddWrapped:579:amount == 0 |==> false
+277:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@withPeriodAdded:603:period == null |==> false
+278:LVR:0:POS:org.joda.time.Partial@withPeriodAdded:603:0 |==> 1
+279:LVR:0:NEG:org.joda.time.Partial@withPeriodAdded:603:0 |==> -1
+280:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withPeriodAdded:603:scalar == 0 |==> scalar <= 0
+281:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withPeriodAdded:603:scalar == 0 |==> scalar >= 0
+282:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withPeriodAdded:603:scalar == 0 |==> false
+283:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.Partial@withPeriodAdded:603:period == null || scalar == 0 |==> period == null != (scalar == 0)
+284:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.Partial@withPeriodAdded:603:period == null || scalar == 0 |==> period == null
+285:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.Partial@withPeriodAdded:603:period == null || scalar == 0 |==> scalar == 0
+286:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.Partial@withPeriodAdded:603:period == null || scalar == 0 |==> true
+287:LVR:0:POS:org.joda.time.Partial@withPeriodAdded:607:0 |==> 1
+288:LVR:0:NEG:org.joda.time.Partial@withPeriodAdded:607:0 |==> -1
+289:ROR:<(int,int):!=(int,int):org.joda.time.Partial@withPeriodAdded:607:i < period.size() |==> i != period.size()
+290:ROR:<(int,int):<=(int,int):org.joda.time.Partial@withPeriodAdded:607:i < period.size() |==> i <= period.size()
+291:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@withPeriodAdded:607:i < period.size() |==> false
+292:LVR:0:POS:org.joda.time.Partial@withPeriodAdded:610:0 |==> 1
+293:LVR:0:NEG:org.joda.time.Partial@withPeriodAdded:610:0 |==> -1
+294:ROR:>=(int,int):==(int,int):org.joda.time.Partial@withPeriodAdded:610:index >= 0 |==> index == 0
+295:ROR:>=(int,int):>(int,int):org.joda.time.Partial@withPeriodAdded:610:index >= 0 |==> index > 0
+296:ROR:>=(int,int):TRUE(int,int):org.joda.time.Partial@withPeriodAdded:610:index >= 0 |==> true
+297:LVR:POS:0:org.joda.time.Partial@plus:628:1 |==> 0
+298:LVR:POS:NEG:org.joda.time.Partial@plus:628:1 |==> -1
+299:LVR:NEG:0:org.joda.time.Partial@minus:641:-1 |==> 0
+300:LVR:NEG:POS:org.joda.time.Partial@minus:641:-1 |==> 1
+301:LVR:0:POS:org.joda.time.Partial@isMatch:672:0 |==> 1
+302:LVR:0:NEG:org.joda.time.Partial@isMatch:672:0 |==> -1
+303:ROR:<(int,int):!=(int,int):org.joda.time.Partial@isMatch:672:i < iTypes.length |==> i != iTypes.length
+304:ROR:<(int,int):<=(int,int):org.joda.time.Partial@isMatch:672:i < iTypes.length |==> i <= iTypes.length
+305:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@isMatch:672:i < iTypes.length |==> false
+306:ROR:!=(int,int):<(int,int):org.joda.time.Partial@isMatch:674:value != iValues[i] |==> value < iValues[i]
+307:ROR:!=(int,int):>(int,int):org.joda.time.Partial@isMatch:674:value != iValues[i] |==> value > iValues[i]
+308:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@isMatch:674:value != iValues[i] |==> true
+309:LVR:FALSE:TRUE:org.joda.time.Partial@isMatch:675:false |==> true
+310:LVR:TRUE:FALSE:org.joda.time.Partial@isMatch:678:true |==> false
+311:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@isMatch:694:partial == null |==> false
+312:LVR:0:POS:org.joda.time.Partial@isMatch:697:0 |==> 1
+313:LVR:0:NEG:org.joda.time.Partial@isMatch:697:0 |==> -1
+314:ROR:<(int,int):!=(int,int):org.joda.time.Partial@isMatch:697:i < iTypes.length |==> i != iTypes.length
+315:ROR:<(int,int):<=(int,int):org.joda.time.Partial@isMatch:697:i < iTypes.length |==> i <= iTypes.length
+316:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@isMatch:697:i < iTypes.length |==> false
+317:ROR:!=(int,int):<(int,int):org.joda.time.Partial@isMatch:699:value != iValues[i] |==> value < iValues[i]
+318:ROR:!=(int,int):>(int,int):org.joda.time.Partial@isMatch:699:value != iValues[i] |==> value > iValues[i]
+319:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@isMatch:699:value != iValues[i] |==> true
+320:LVR:FALSE:TRUE:org.joda.time.Partial@isMatch:700:false |==> true
+321:LVR:TRUE:FALSE:org.joda.time.Partial@isMatch:703:true |==> false
+322:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@getFormatter:720:f == null |==> false
+323:LVR:0:POS:org.joda.time.Partial@getFormatter:721:0 |==> 1
+324:LVR:0:NEG:org.joda.time.Partial@getFormatter:721:0 |==> -1
+325:ROR:==(int,int):<=(int,int):org.joda.time.Partial@getFormatter:721:size() == 0 |==> size() <= 0
+326:ROR:==(int,int):>=(int,int):org.joda.time.Partial@getFormatter:721:size() == 0 |==> size() >= 0
+327:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@getFormatter:721:size() == 0 |==> false
+328:LVR:POS:0:org.joda.time.Partial@getFormatter:724:2 |==> 0
+329:LVR:POS:NEG:org.joda.time.Partial@getFormatter:724:2 |==> -2
+330:LVR:0:POS:org.joda.time.Partial@getFormatter:727:0 |==> 1
+331:LVR:0:NEG:org.joda.time.Partial@getFormatter:727:0 |==> -1
+332:LVR:TRUE:FALSE:org.joda.time.Partial@getFormatter:727:true |==> false
+333:LVR:FALSE:TRUE:org.joda.time.Partial@getFormatter:727:false |==> true
+334:LVR:0:POS:org.joda.time.Partial@getFormatter:728:0 |==> 1
+335:LVR:0:NEG:org.joda.time.Partial@getFormatter:728:0 |==> -1
+336:ROR:==(int,int):<=(int,int):org.joda.time.Partial@getFormatter:728:list.size() == 0 |==> list.size() <= 0
+337:ROR:==(int,int):>=(int,int):org.joda.time.Partial@getFormatter:728:list.size() == 0 |==> list.size() >= 0
+338:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@getFormatter:728:list.size() == 0 |==> false
+339:LVR:POS:0:org.joda.time.Partial@getFormatter:729:1 |==> 0
+340:LVR:POS:NEG:org.joda.time.Partial@getFormatter:729:1 |==> -1
+341:LVR:0:POS:org.joda.time.Partial@getFormatter:729:0 |==> 1
+342:LVR:0:NEG:org.joda.time.Partial@getFormatter:729:0 |==> -1
+343:LVR:0:POS:org.joda.time.Partial@getFormatter:736:0 |==> 1
+344:LVR:0:NEG:org.joda.time.Partial@getFormatter:736:0 |==> -1
+345:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString:753:f == null |==> false
+346:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toString:754:getFormatter() |==> <NO-OP>
+347:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString:756:f == null |==> false
+348:LVR:POS:0:org.joda.time.Partial@toString:760:1 |==> 0
+349:LVR:POS:NEG:org.joda.time.Partial@toString:760:1 |==> -1
+350:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString:761:f1 == null |==> false
+351:LVR:POS:0:org.joda.time.Partial@toStringList:778:20 |==> 0
+352:LVR:POS:NEG:org.joda.time.Partial@toStringList:778:20 |==> -20
+353:AOR:*(int,int):%(int,int):org.joda.time.Partial@toStringList:778:20 * size |==> 20 % size
+354:AOR:*(int,int):+(int,int):org.joda.time.Partial@toStringList:778:20 * size |==> 20 + size
+355:AOR:*(int,int):-(int,int):org.joda.time.Partial@toStringList:778:20 * size |==> 20 - size
+356:AOR:*(int,int):/(int,int):org.joda.time.Partial@toStringList:778:20 * size |==> 20 / size
+357:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:779:buf.append('[') |==> <NO-OP>
+358:LVR:0:POS:org.joda.time.Partial@toStringList:780:0 |==> 1
+359:LVR:0:NEG:org.joda.time.Partial@toStringList:780:0 |==> -1
+360:ROR:<(int,int):!=(int,int):org.joda.time.Partial@toStringList:780:i < size |==> i != size
+361:ROR:<(int,int):<=(int,int):org.joda.time.Partial@toStringList:780:i < size |==> i <= size
+362:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@toStringList:780:i < size |==> false
+363:LVR:0:POS:org.joda.time.Partial@toStringList:781:0 |==> 1
+364:LVR:0:NEG:org.joda.time.Partial@toStringList:781:0 |==> -1
+365:ROR:>(int,int):!=(int,int):org.joda.time.Partial@toStringList:781:i > 0 |==> i != 0
+366:ROR:>(int,int):>=(int,int):org.joda.time.Partial@toStringList:781:i > 0 |==> i >= 0
+367:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@toStringList:781:i > 0 |==> false
+368:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:782:buf.append(',').append(' ') |==> <NO-OP>
+369:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:784:buf.append(iTypes[i].getName()) |==> <NO-OP>
+370:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:785:buf.append('=') |==> <NO-OP>
+371:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:786:buf.append(iValues[i]) |==> <NO-OP>
+372:STD:<CALL>:<NO-OP>:org.joda.time.Partial@toStringList:788:buf.append(']') |==> <NO-OP>
+373:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString:800:pattern == null |==> false
+374:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString:815:pattern == null |==> false
+375:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@getInstance:49:cCache == null |==> false
+376:LVR:POS:0:org.joda.time.field.UnsupportedDurationField@getInstance:50:7 |==> 0
+377:LVR:POS:NEG:org.joda.time.field.UnsupportedDurationField@getInstance:50:7 |==> -7
+378:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@getInstance:55:field == null |==> false
+379:STD:<CALL>:<NO-OP>:org.joda.time.field.UnsupportedDurationField@getInstance:57:cCache.put(type, field) |==> <NO-OP>
+380:LVR:FALSE:TRUE:org.joda.time.field.UnsupportedDurationField@isSupported:92:false |==> true
+381:LVR:TRUE:FALSE:org.joda.time.field.UnsupportedDurationField@isPrecise:101:true |==> false
+382:LVR:0:POS:org.joda.time.field.UnsupportedDurationField@getUnitMillis:218:0 |==> 1
+383:LVR:0:NEG:org.joda.time.field.UnsupportedDurationField@getUnitMillis:218:0 |==> -1
+384:LVR:0:POS:org.joda.time.field.UnsupportedDurationField@compareTo:227:0 |==> 1
+385:LVR:0:NEG:org.joda.time.field.UnsupportedDurationField@compareTo:227:0 |==> -1
+386:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals:238:this == obj |==> false
+387:LVR:TRUE:FALSE:org.joda.time.field.UnsupportedDurationField@equals:239:true |==> false
+388:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals:242:other.getName() == null |==> false
+389:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals:243:getName() == null |==> false
+390:LVR:FALSE:TRUE:org.joda.time.field.UnsupportedDurationField@equals:247:false |==> true
