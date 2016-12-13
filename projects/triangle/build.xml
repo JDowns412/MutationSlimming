@@ -127,7 +127,9 @@
   		exportCovMap="true"
   		covMapFile="${dir.mut}/coverageMap.csv"
   		exportKillMap="true"
-   		killMapFile="${dir.mut}/killMap.csv">
+   		killMapFile="${dir.mut}/killMap.csv"
+      sort="sort_methods">
+
             <classpath path=".mutated"/>
             <classpath path="bin"/>
             <batchtest fork="false">
