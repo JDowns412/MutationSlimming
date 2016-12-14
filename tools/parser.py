@@ -78,7 +78,7 @@ def aggregateOperators(info):
 		operator = info["mutants"][row]["operator"]
 		killedBy = info["mutants"][row]["killedBy"]
 		if operator not in info["operators"]:
-			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row]}
+			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row], "killedMutants" : []}
 		else:
 			info["operators"][operator]["count"] += 1
 			info["operators"][operator]["mutants"].append(row)
@@ -96,7 +96,7 @@ def aggregateOperators(info):
 def aggregateSuites(info):
 	for s in info["suites"]:
 		for op in info["operators"]:
-			info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0}
+			info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0, "killedMutantList" : []}
 
 	for row in info["mutants"]:
 		operator = info["mutants"][row]["operator"]
@@ -118,6 +118,10 @@ def calculateRelevantMutantsKilled(info):
 		for mutant in info["suites"][row]["mutantsRelevant"]:
 			mutantCategory = info["mutants"][mutant]["operator"]
 			info["suites"][row]["operatorStats"][mutantCategory]["relevantCount"] += 1
+			if mutant in info["suites"][row]["mutantsKilled"]:
+				info["suites"][row]["operatorStats"][mutantCategory]["killedMutantList"].append(mutant)
+				if mutant not in info["operators"][mutantCategory]["killedMutants"]:
+					info["operators"][mutantCategory]["killedMutants"].append(mutant)
 
 		for op in info["suites"][row]["operatorStats"]:
 			killCount = info["suites"][row]["operatorStats"][op]["killCount"]
@@ -125,6 +129,13 @@ def calculateRelevantMutantsKilled(info):
 
 			if info["suites"][row]["operatorStats"][op]["relevantCount"] > 0:
 				info["suites"][row]["operatorStats"][op]["percentRelevantKilled"] = killCount/relevantCount
+
+def calcSubsumptionPercentages(info):
+	with open("subsumptions.csv", 'wb') as csvfile:
+		#declares the writer object with a comma as a delimiter (since we're using a csv output)
+  		subWriter = csv.writer(csvfile, delimiter=',')
+  		#title row
+   		subWriter.writerow(['Mutant Number','Operator Class','Killed by','Description'])
 
 def writeOut(outFile, outRatios, info):
 	with open(outFile, 'wb') as csvfile:
@@ -222,6 +233,7 @@ if __name__=="__main__":
         aggregateOperators(info)
         aggregateSuites(info)
         calculateRelevantMutantsKilled(info)
+        calcSubsumptionPercentages(info)
         
 		#writeOut needs to be the last method called since it also writes our results JSON file out.
         writeOut(sys.argv[5], sys.argv[6], info)

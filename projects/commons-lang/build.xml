@@ -122,7 +122,8 @@
         		exportCovMap="true"
           		covMapFile="coverageMap.csv"
           		exportKillMap="true"
-           		killMapFile="killMap.csv">
+           		killMapFile="killMap.csv"
+                sort="sort_methods">
             <classpath refid="test.classpath"/>
             <formatter type="plain" usefile="true" />
             <!-- If test.entry is defined, run a single test, otherwise run all valid tests -->
