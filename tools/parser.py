@@ -78,7 +78,7 @@ def aggregateOperators(info):
 		operator = info["mutants"][row]["operator"]
 		killedBy = info["mutants"][row]["killedBy"]
 		if operator not in info["operators"]:
-			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row], "killedMutants" : [], "subRatios" : {"AOR" : 0.001, "LOR" : 0.001, "COR" : 0.001, "ROR" : 0.001, "SOR" : 0.001, "ORU" : 0.001, "STD" : 0.001, "LVR" : 0.001}}
+			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row], "killedMutants" : [], "subs" : {"AOR" : {"alsoKilled" : [], "ratio" :  0.001}, "LOR" : {"alsoKilled" : [], "ratio" :  0.001}, "COR" : {"alsoKilled" : [], "ratio" :  0.001}, "ROR" : {"alsoKilled" : [], "ratio" :  0.001}, "SOR" : {"alsoKilled" : [], "ratio" :  0.001}, "ORU" : {"alsoKilled" : [], "ratio" :  0.001}, "STD" : {"alsoKilled" : [], "ratio" :  0.001}, "LVR" : {"alsoKilled" : [], "ratio" :  0.001}}}
 		else:
 			info["operators"][operator]["count"] += 1
 			info["operators"][operator]["mutants"].append(row)
@@ -143,10 +143,12 @@ def calcSubsumptionPercentages(info):
 					for suite in info["suites"]:
 						if killed in info["suites"][suite]["mutantsKilled"]:
 							for alsoKilled in info["suites"][suite]["mutantsKilled"]:
-								if alsoKilled in info["operators"][op2]["mutants"]:
+								if alsoKilled in info["operators"][op2]["mutants"] and alsoKilled not in info["operators"][op1]["subs"][op2]["alsoKilled"]:
+									info["operators"][op1]["subs"][op2]["alsoKilled"].append(alsoKilled)
 									killedCount += 1
 
-				info["operators"][op1]["subRatios"][op2] = killedCount / info["operators"][op2]["count"]
+				#print("killedCount:{0}, numkilled:{1}, ratio: {2}".format(killedCount, info["operators"][op2]["numKilled"], killedCount / info["operators"][op2]["numKilled"]))
+				info["operators"][op1]["subs"][op2]["ratio"] = float(killedCount) / info["operators"][op2]["numKilled"]
 
 def writeOut(outFile, outRatios, info):
 	with open(outFile, 'wb') as csvfile:
@@ -165,7 +167,10 @@ def writeOut(outFile, outRatios, info):
   		#title row
    		subWriter.writerow(['Operator Pair','Subsumption ratio'])
 
-   		#sub loop here
+   		for op1 in info["operators"]:
+   			for op2 in info["operators"][op1]["subs"]:
+   				if info["operators"][op1]["subs"][op2]["ratio"] > 0.5:
+   					subWriter.writerow([("{0} v. {1}".format(op1, op2)), info["operators"][op1]["subs"][op2]["ratio"]])
 
 	#info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0}
 
