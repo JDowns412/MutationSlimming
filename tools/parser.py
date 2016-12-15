@@ -78,7 +78,7 @@ def aggregateOperators(info):
 		operator = info["mutants"][row]["operator"]
 		killedBy = info["mutants"][row]["killedBy"]
 		if operator not in info["operators"]:
-			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row], "killedMutants" : []}
+			info["operators"][operator] = {"count" : 1.0, "numKilled": 0, "mutants" : [row], "killedMutants" : [], "subRatios" : {"AOR" : 0.001, "LOR" : 0.001, "COR" : 0.001, "ROR" : 0.001, "SOR" : 0.001, "ORU" : 0.001, "STD" : 0.001, "LVR" : 0.001}}
 		else:
 			info["operators"][operator]["count"] += 1
 			info["operators"][operator]["mutants"].append(row)
@@ -131,11 +131,22 @@ def calculateRelevantMutantsKilled(info):
 				info["suites"][row]["operatorStats"][op]["percentRelevantKilled"] = killCount/relevantCount
 
 def calcSubsumptionPercentages(info):
-	with open("subsumptions.csv", 'wb') as csvfile:
-		#declares the writer object with a comma as a delimiter (since we're using a csv output)
-  		subWriter = csv.writer(csvfile, delimiter=',')
-  		#title row
-   		subWriter.writerow(['Mutant Number','Operator Class','Killed by','Description'])
+	for op1 in info["operators"]:
+		for op2 in info["operators"]:
+
+			#this will be used to keep track of how many mutants within op2 are subsumed by "killed" in the next loop
+			killedCount = 0
+
+			#avoid unnecessary computing
+			if op1 != op2:	
+				for killed in info["operators"][op1]["killedMutants"]:
+					for suite in info["suites"]:
+						if killed in info["suites"][suite]["mutantsKilled"]:
+							for alsoKilled in info["suites"][suite]["mutantsKilled"]:
+								if alsoKilled in info["operators"][op2]["mutants"]:
+									killedCount += 1
+
+				info["operators"][op1]["subRatios"][op2] = killedCount / info["operators"][op2]["count"]
 
 def writeOut(outFile, outRatios, info):
 	with open(outFile, 'wb') as csvfile:
@@ -148,6 +159,13 @@ def writeOut(outFile, outRatios, info):
 		for num in range(len(info["mutants"])):
 			mutantWriter.writerow([(num+1), info["mutants"][str(num+1)]['operator'], info["mutants"][str(num+1)]['killedBy'], info["mutants"][str(num+1)]['Description']])
 
+	with open("subsumptions.csv", 'wb') as csvfile:
+		#declares the writer object with a comma as a delimiter (since we're using a csv output)
+  		subWriter = csv.writer(csvfile, delimiter=',')
+  		#title row
+   		subWriter.writerow(['Operator Pair','Subsumption ratio'])
+
+   		#sub loop here
 
 	#info["suites"][s]["operatorStats"][op] = {"killCount" : 0, "relevantCount" : 0.0, "percentRelevantKilled" : 0.0}
 
