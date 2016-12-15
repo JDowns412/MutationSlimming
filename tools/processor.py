@@ -182,6 +182,8 @@ def calcSubsumptionPercentages(info):
 									#increment the counter of non-repeated subsumed op2 mutants
 									killedCount += 1
 
+				print("Finished {0} sub -> {1}".format(op1, op2))
+
 				#calculate and set the subsumption percentage for this combo of ops (op1 subsumes op2 by this ratio)
 				info["operators"][op1]["subs"][op2]["ratio"] = float(killedCount) / info["operators"][op2]["numKilled"]
 
